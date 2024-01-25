@@ -1,0 +1,19 @@
+{
+    "name": "TweenAnimationSystem",
+    "rootNamespace": "",
+    "references": [
+        "NaughtyAttributes.Core",
+        "DOTween.Modules",
+        "Utility",
+        "DebugLogger"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,645 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f2be41352e946dda00d435818597d0, type: 3}
+  m_Name: PackageVersions
+  m_EditorClassIdentifier: 
+  _installedPackages:
+  - Identifier: com.google.android.appbundle
+    Version:
+      Major: 1
+      Minor: 8
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.google.external-dependency-manager
+    Version:
+      Major: 1
+      Minor: 2
+      Patch: 170
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.applicationsession
+    Version:
+      Major: 2
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.buildinfo
+    Version:
+      Major: 1
+      Minor: 3
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.dataplatform
+    Version:
+      Major: 14
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.editorutility
+    Version:
+      Major: 2
+      Minor: 0
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.external.naughtyattributes
+    Version:
+      Major: 2
+      Minor: 1
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.facebookadtrackingauthorization
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 3
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.jsondotnet
+    Version:
+      Major: 3
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.jsonutility
+    Version:
+      Major: 1
+      Minor: 6
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.linkxmlextractor
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 2
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.localpushnotifications
+    Version:
+      Major: 2
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.logger
+    Version:
+      Major: 1
+      Minor: 1
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.mobileadid
+    Version:
+      Major: 2
+      Minor: 0
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.networkconnection
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.optional
+    Version:
+      Major: 2
+      Minor: 2
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.packageversionextractor
+    Version:
+      Major: 2
+      Minor: 2
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.promises
+    Version:
+      Major: 3
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.reactiveextensions
+    Version:
+      Major: 1
+      Minor: 10
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.savegameframework
+    Version:
+      Major: 6
+      Minor: 0
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.testutilities
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.time
+    Version:
+      Major: 3
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.tweenanimationsystem
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.unitywrappers
+    Version:
+      Major: 0
+      Minor: 1
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.utilityextensions
+    Version:
+      Major: 1
+      Minor: 4
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.2d.sprite
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.addressables
+    Version:
+      Major: 1
+      Minor: 19
+      Patch: 19
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.cinemachine
+    Version:
+      Major: 2
+      Minor: 8
+      Patch: 9
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.ide.rider
+    Version:
+      Major: 3
+      Minor: 0
+      Patch: 18
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.ide.visualstudio
+    Version:
+      Major: 2
+      Minor: 0
+      Patch: 17
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.ide.vscode
+    Version:
+      Major: 1
+      Minor: 2
+      Patch: 5
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.mobile.android-logcat
+    Version:
+      Major: 1
+      Minor: 3
+      Patch: 2
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.mobile.notifications
+    Version:
+      Major: 2
+      Minor: 1
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.purchasing
+    Version:
+      Major: 4
+      Minor: 6
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.render-pipelines.universal
+    Version:
+      Major: 12
+      Minor: 1
+      Patch: 10
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.test-framework
+    Version:
+      Major: 1
+      Minor: 1
+      Patch: 31
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.textmeshpro
+    Version:
+      Major: 3
+      Minor: 0
+      Patch: 6
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.timeline
+    Version:
+      Major: 1
+      Minor: 6
+      Patch: 4
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.ugui
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.xr.legacyinputhelpers
+    Version:
+      Major: 2
+      Minor: 1
+      Patch: 10
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.ai
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.androidjni
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.animation
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.assetbundle
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.audio
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.cloth
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.director
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.imageconversion
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.imgui
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.jsonserialize
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.particlesystem
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.physics
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.physics2d
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.screencapture
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.terrain
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.terrainphysics
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.tilemap
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.ui
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.uielements
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.umbra
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.unityanalytics
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.unitywebrequest
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.unitywebrequestassetbundle
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.unitywebrequestaudio
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.unitywebrequesttexture
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.unitywebrequestwww
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.vehicles
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.video
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.vr
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.wind
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.xr
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.subsystems
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.modules.uielementsnative
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.ext.nunit
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 6
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.mathematics
+    Version:
+      Major: 1
+      Minor: 2
+      Patch: 6
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.burst
+    Version:
+      Major: 1
+      Minor: 8
+      Patch: 2
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.render-pipelines.core
+    Version:
+      Major: 12
+      Minor: 1
+      Patch: 10
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.shadergraph
+    Version:
+      Major: 12
+      Minor: 1
+      Patch: 10
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.services.core
+    Version:
+      Major: 1
+      Minor: 8
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.services.analytics
+    Version:
+      Major: 4
+      Minor: 3
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.scriptablebuildpipeline
+    Version:
+      Major: 1
+      Minor: 20
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.neuecc.unirx
+    Version:
+      Major: 8
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.cloudsave
+    Version:
+      Major: 7
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.nuget.newtonsoft-json
+    Version:
+      Major: 3
+      Minor: 0
+      Patch: 2
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.gitservice
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.unity.searcher
+    Version:
+      Major: 4
+      Minor: 9
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.capsule
+    Version:
+      Major: 5
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.satellite
+    Version:
+      Major: 4
+      Minor: 0
+      Patch: 1
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.remoteaccesslibrary
+    Version:
+      Major: 2
+      Minor: 1
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
+  - Identifier: com.kolibrigames.external.ioskeychain
+    Version:
+      Major: 1
+      Minor: 0
+      Patch: 0
+      Preview: 0
+      IsPreview: 0
