@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneConfig: {fileID: 11400000, guid: b93a949e8dfd52d44854a921d44cf244, type: 2}
+  _levelTimerConfig: {fileID: 11400000, guid: eb9eeb0951a67094b9c18fa45ab072e0, type: 2}
