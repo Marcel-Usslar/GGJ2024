@@ -38,6 +38,9 @@ namespace Utility
 
         private void Trigger(T value)
         {
+            if (_value.Equals(value))
+                return;
+
             _value = value;
 
             if (_callbacks.Count == 0)

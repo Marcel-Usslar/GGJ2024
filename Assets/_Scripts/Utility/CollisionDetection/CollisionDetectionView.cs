@@ -27,7 +27,23 @@ namespace Utility.CollisionDetection
             _models.ForEach(model => model.TryTriggerStay(other.gameObject));
         }
 
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            if (!_isSetUp)
+                return;
+
+            _models.ForEach(model => model.TryTriggerStay(other.gameObject));
+        }
+
         private void OnCollisionStay(Collision other)
+        {
+            if (!_isSetUp)
+                return;
+
+            _models.ForEach(model => model.TryTriggerStay(other.gameObject));
+        }
+
+        private void OnCollisionStay2D(Collision2D other)
         {
             if (!_isSetUp)
                 return;
@@ -43,7 +59,23 @@ namespace Utility.CollisionDetection
             _models.ForEach(model => model.TryTriggerEnter(other.gameObject));
         }
 
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (!_isSetUp)
+                return;
+
+            _models.ForEach(model => model.TryTriggerEnter(other.gameObject));
+        }
+
         private void OnCollisionEnter(Collision other)
+        {
+            if (!_isSetUp)
+                return;
+
+            _models.ForEach(model => model.TryTriggerEnter(other.gameObject));
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
         {
             if (!_isSetUp)
                 return;
@@ -59,7 +91,23 @@ namespace Utility.CollisionDetection
             _models.ForEach(model => model.TryTriggerExit(other.gameObject));
         }
 
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (!_isSetUp)
+                return;
+
+            _models.ForEach(model => model.TryTriggerExit(other.gameObject));
+        }
+
         private void OnCollisionExit(Collision other)
+        {
+            if (!_isSetUp)
+                return;
+
+            _models.ForEach(model => model.TryTriggerExit(other.gameObject));
+        }
+
+        private void OnCollisionExit2D(Collision2D other)
         {
             if (!_isSetUp)
                 return;
