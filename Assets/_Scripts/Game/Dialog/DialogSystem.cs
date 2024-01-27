@@ -2,8 +2,9 @@ using Game.Utility;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utility.Singletons;
 
-public class DialogSystem : MonoBehaviour
+public class DialogSystem : SingletonMonoBehaviour<DialogSystem>
 {
 
     int interactionID = 1;  //specify with who the player interacts (objects, persons, ...)
