@@ -1,23 +1,14 @@
 using Game.Utility;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Utility.Singletons;
 
-public class DialogSystem : SingletonMonoBehaviour<DialogSystem>
+namespace Game.Dialog
 {
-    // Start is called before the first frame update
-    void Start()
+    public class DialogSystem : SingletonMonoBehaviour<DialogSystem>
     {
-        Debug.LogError("Welcome to the dialog system! :)");
-    }
-
-    // Update is called once per frame
-    public void getDialogText(int interactionID)
-    {
-        if (interactionID >= 0)
+        public void TriggerDialog(int dialogId)
         {
-            string message = ConfigSingletonInstaller.Instance.DialogConfig.GetNextDialog(interactionID);
+            var message = ConfigSingletonInstaller.Instance.DialogConfig.GetNextDialog(dialogId);
             Debug.LogError(message);
         }
     }

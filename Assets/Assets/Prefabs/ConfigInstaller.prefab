@@ -44,7 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d40cc403434d82bdfcf422220f60a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneConfig: {fileID: 11400000, guid: b93a949e8dfd52d44854a921d44cf244, type: 2}
+  _characterDialogConfig: {fileID: 11400000, guid: de9f6165b0b1bc1468f840b2b81465fa,
+    type: 2}
+  _dialogConfig: {fileID: 11400000, guid: c2f6aac60f4538c4f9f45623ff65d7c0, type: 2}
   _levelTimerConfig: {fileID: 11400000, guid: eb9eeb0951a67094b9c18fa45ab072e0, type: 2}
-  _speakerConfig: {fileID: 11400000, guid: a4448f84ecd0cf84c94dcb24069b06a0, type: 2}
   _questConfig: {fileID: 11400000, guid: eac0b4216e3f5a445a7dcd8522cae7c9, type: 2}
+  _sceneConfig: {fileID: 11400000, guid: b93a949e8dfd52d44854a921d44cf244, type: 2}
+  _speakerConfig: {fileID: 11400000, guid: a4448f84ecd0cf84c94dcb24069b06a0, type: 2}

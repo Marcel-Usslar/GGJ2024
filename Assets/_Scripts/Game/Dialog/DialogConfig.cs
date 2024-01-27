@@ -7,8 +7,8 @@ using UnityEngine;
 
 
 // ID von Person oder Quest -> Dialogfetzen
-// Sprung zwischen Fetzen über Taste/Knopf
-// (Noch) keine Antwortmöglichkeiten
+// Sprung zwischen Fetzen Ã¼ber Taste/Knopf
+// (Noch) keine AntwortmÃ¶glichkeiten
 
 public class DialogConfig : ScriptableObject
 {
@@ -56,6 +56,6 @@ public class DialogConfig : ScriptableObject
     public bool CheckIfDialogEnds(int dialogID)
     {
         var currentDialogMapping = GetDialogMappingByDialogID(dialogID);
-        return currentDialogMapping.finishDialogIndexes.Contains(currentDialogMapping.DialogID); 
+        return currentDialogMapping.finishDialogIndexes.Contains(currentDialogMapping.DialogID);
     }
 }

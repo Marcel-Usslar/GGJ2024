@@ -1,4 +1,5 @@
-﻿using Game.LevelManagement;
+﻿using Game.Dialog;
+using Game.LevelManagement;
 using Game.Quests;
 using Game.Speaker;
 using UnityEngine;
@@ -8,16 +9,18 @@ namespace Game.Utility
 {
     public class ConfigSingletonInstaller : SingletonMonoBehaviour<ConfigSingletonInstaller>
     {
-        [SerializeField] private SceneConfig _sceneConfig;
-        [SerializeField] private LevelTimerConfig _levelTimerConfig;
+        [SerializeField] private CharacterDialogConfig _characterDialogConfig;
         [SerializeField] private DialogConfig _dialogConfig;
-        [SerializeField] private SpeakerConfig _speakerConfig;
+        [SerializeField] private LevelTimerConfig _levelTimerConfig;
         [SerializeField] private QuestConfig _questConfig;
+        [SerializeField] private SceneConfig _sceneConfig;
+        [SerializeField] private SpeakerConfig _speakerConfig;
 
-        public ISceneConfig SceneConfig => _sceneConfig;
-        public LevelTimerConfig LevelTimerConfig => _levelTimerConfig;
+        public CharacterDialogConfig CharacterDialogConfig => _characterDialogConfig;
         public DialogConfig DialogConfig => _dialogConfig;
-        public SpeakerConfig SpeakerConfig => _speakerConfig;
+        public LevelTimerConfig LevelTimerConfig => _levelTimerConfig;
         public QuestConfig QuestConfig => _questConfig;
+        public ISceneConfig SceneConfig => _sceneConfig;
+        public SpeakerConfig SpeakerConfig => _speakerConfig;
     }
 }

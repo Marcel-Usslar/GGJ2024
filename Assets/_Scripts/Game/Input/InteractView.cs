@@ -1,4 +1,5 @@
 using CustomButton;
+using Game.Interaction;
 using UnityEngine;
 
 namespace Game.Input
@@ -24,6 +25,8 @@ namespace Game.Input
 
         private void Update()
         {
+            _button.gameObject.SetActive(PlayerInteractionModel.Instance.CurrentInteractable != null);
+
             if (_allowKeyboardInput && UnityEngine.Input.GetKeyDown(KeyCode.E))
                 InputModel.Instance.TriggerInteraction();
         }
