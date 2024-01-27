@@ -1,24 +1,5 @@
 {
-  "scopedRegistries": [
-    {
-      "name": "Game-kit",
-      "url": "https://gitlab.kolibrigames.com/api/v4/projects/197/packages/npm",
-      "scopes": [
-        "com.kolibrigames",
-        "com.neuecc",
-        "com.codeplex",
-        "com.interillusion",
-        "com.google"
-      ]
-    }
-  ],
-  "testables": [
-    "com.kolibrigames.reactiveextensions",
-    "com.kolibrigames.logger"
-  ],
   "dependencies": {
-    "com.google.android.appbundle": "1.8.0",
-    "com.google.external-dependency-manager": "1.2.170",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.addressables": "1.19.19",
     "com.unity.cinemachine": "2.8.9",
