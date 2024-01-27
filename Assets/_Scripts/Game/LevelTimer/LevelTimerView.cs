@@ -12,6 +12,7 @@ namespace Game.LevelTimer
         public string TimerText { set => _timerText.text = value; }
 
         float timeCountSinceLevelStart = 0;
+        bool timeIsUpdated = true;
 
         // Start is called before the first frame update
         void Start()
@@ -22,15 +23,18 @@ namespace Game.LevelTimer
         // Update is called once per frame
         void Update()
         {
-            timeCountSinceLevelStart += Time.deltaTime;
-            if (TimeIsUp())
-            {
+            if (timeIsUpdated) { 
+                timeCountSinceLevelStart += Time.deltaTime;
+                CheckTimeIsUp();
+                TimerText = GetInGameTime(timeCountSinceLevelStart);
+            }
+            else {
                 PrintMessage("TimeUp");
             }
         }
 
-        public bool TimeIsUp() {
-            return timeCountSinceLevelStart >= ConfigSingletonInstaller.Instance.LevelTimerConfig.realLifeTimeUntilEndOfLevel_secs;
+        public void CheckTimeIsUp() {            
+            timeIsUpdated = (timeCountSinceLevelStart <= ConfigSingletonInstaller.Instance.LevelTimerConfig.realLifeTimeUntilEndOfLevel_secs);
         }
 
         public void PrintMessage(string Trigger)
@@ -50,15 +54,14 @@ namespace Game.LevelTimer
         public string GetInGameTime(float realLifeTime)
         {
             DateTime startDate = DateTime.MinValue.AddHours(ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameStartTime);
-            float passedTime = (ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameEndTime -
+            float passedTimeInGame = (ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameEndTime -
                                 ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameStartTime) *
                 realLifeTime / ConfigSingletonInstaller.Instance.LevelTimerConfig.realLifeTimeUntilEndOfLevel_secs;
-            DateTime currentTimeInGame = startDate.AddHours(passedTime);
-            int hours = currentTimeInGame.Hour;
-            int minutes = currentTimeInGame.Minute;
-            Debug.LogError($"{hours}:{minutes}");
+            float quantiledPassedTimeInGame = ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameTimeStep * (int) (passedTimeInGame / ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameTimeStep);
+            DateTime currentTimeInGame = startDate.AddHours(quantiledPassedTimeInGame);
 
-            return currentTimeInGame.ToString(@"hh\:mm\:ss\:fff");
+            //return currentTimeInGame.ToString(@"hh\:mm");
+            return currentTimeInGame.ToString("t");
         }
     }
 }
