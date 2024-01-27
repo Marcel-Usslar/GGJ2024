@@ -7,7 +7,8 @@
         "TweenAnimationSystem",
         "DebugLogger",
         "ReactiveButton",
-        "Utility"
+        "Utility",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
