@@ -5,25 +5,28 @@ using UnityEngine;
 
 namespace Game.Interaction
 {
-    public class CharacterInteractableItemView : InteractableItemView
+    public class DialogInteractableItemView : InteractableItemView
     {
-        [SerializeField] private string _id;
         [SerializeField] private string _speakerName;
-
-        public override string Id => _id;
+        [SerializeField] private DialogStateView _dialogStateView;
 
         public override void Interact()
         {
             if (QuestSystem.Instance.HasQuest(_speakerName))
                 AcceptQuest();
             else
-                DialogSystem.Instance.TriggerDialog(ConfigSingletonInstaller.Instance.CharacterDialogConfig.GetDialogId(_speakerName, 0));
+                TriggerDialog();
         }
 
         private void AcceptQuest()
         {
             QuestSystem.Instance.AcceptQuest(_speakerName);
-            //TODO trigger dialog for quest
+            TriggerDialog();
+        }
+
+        private void TriggerDialog()
+        {
+            DialogSystem.Instance.TriggerDialog(_speakerName, _dialogStateView.State);
         }
     }
 }

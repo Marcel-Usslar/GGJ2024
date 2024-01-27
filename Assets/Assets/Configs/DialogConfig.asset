@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogData:
   - DialogID: 1
-    SpeakerName: Gonzalez
-    DialogTexts:
-    - agoprghaeropihaeroagoprghaeropihaeroagoprghaeropihaeroagoprghaeropihaero
-    - Wie bitte?
-    - Das ist meine dritte Nachricht
+    DialogSpeakerData:
+    - Speaker: Gonzalez
+      Text: agoprghaeropihaeroag oprghaeropihaeroa goprghaeropihaeroagoprghae ropihaero
+    - Speaker: Gonzalez
+      Text: Wie bitte?
+    - Speaker: Gonzalez
+      Text: Das ist meine dritte Nachricht

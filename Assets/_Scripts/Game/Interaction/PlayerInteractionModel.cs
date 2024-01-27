@@ -10,7 +10,6 @@ namespace Game.Interaction
         private readonly List<InteractableItemView> _interactableItems = new();
 
         public InteractableItemView CurrentInteractable { get; private set; }
-        public IEnumerable<InteractableItemView> InteractableItems => _interactableItems;
 
         public void CalculateCurrentInteractable(Vector2 position)
         {
@@ -20,7 +19,7 @@ namespace Game.Interaction
                 return;
             }
 
-            CurrentInteractable = PlayerInteractionModel.Instance.InteractableItems
+            CurrentInteractable = _interactableItems
                 .OrderByDescending(view => Vector2.Distance(position, view.Position))
                 .First();
         }
