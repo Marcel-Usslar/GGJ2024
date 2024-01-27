@@ -1,6 +1,7 @@
 using Game.GameState;
 using Game.Input;
 using UnityEngine;
+using Utility;
 
 namespace Game.Movement
 {
@@ -11,10 +12,13 @@ namespace Game.Movement
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private Transform _directionIndicator;
 
+        public ReactiveProperty<Vector2> Position { get; } = new();
+
         private void FixedUpdate()
         {
             if (GameStateModel.Instance.IsPaused.Value)
             {
+                Position.Value = _rigidbody.position;
                 _rigidbody.velocity = Vector2.zero;
                 return;
             }
@@ -25,6 +29,7 @@ namespace Game.Movement
             var deltaTime = Time.fixedDeltaTime;
 
             _rigidbody.velocity = input * deltaTime * _speed;
+            Position.Value = _rigidbody.position;
 
             var direction = InputModel.Instance.NormalizedInput == Vector2.zero
                 ? InputModel.Instance.LastNormalizedInput
