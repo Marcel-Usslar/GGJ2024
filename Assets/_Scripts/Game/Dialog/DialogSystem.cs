@@ -6,6 +6,10 @@ namespace Game.Dialog
 {
     public class DialogSystem : SingletonMonoBehaviour<DialogSystem>
     {
+        override protected void OnInitialize()
+        {
+            ConfigSingletonInstaller.Instance.DialogConfig.ResetDialogs();
+        }
         public void TriggerDialog(int dialogId)
         {
             var message = ConfigSingletonInstaller.Instance.DialogConfig.GetNextDialog(dialogId);
