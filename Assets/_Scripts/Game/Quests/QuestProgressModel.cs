@@ -12,8 +12,13 @@ namespace Game.Quests
 
         public QuestProgressModel()
         {
-            LevelLoadingModel.Instance.OnLevelLoaded
-                .RegisterCallback(() => TotalQuests = ConfigSingletonInstaller.Instance.QuestConfig.TotalQuests);
+            UpdateTotalQuests();
+            LevelLoadingModel.Instance.OnLevelLoaded.RegisterCallback(UpdateTotalQuests);
+        }
+
+        private void UpdateTotalQuests()
+        {
+            TotalQuests = ConfigSingletonInstaller.Instance.QuestConfig.TotalQuests;
         }
     }
 }

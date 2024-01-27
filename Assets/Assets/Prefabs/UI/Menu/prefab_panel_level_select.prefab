@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 2526198164975342105}
   - component: {fileID: 6016293101075634202}
   - component: {fileID: 250416650153546012}
+  - component: {fileID: 3281818477208832535}
   - component: {fileID: 2734982959363134960}
   m_Layer: 5
   m_Name: prefab_panel_level_select
@@ -361,6 +362,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 8806320298123008922}
+--- !u!114 &3281818477208832535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768194101603511030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bc09e000dfb47fd8aa50c085c093cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _menuRoot: {fileID: 3768194101603511030}
+  _closeButton: {fileID: 0}
 --- !u!114 &2734982959363134960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7340048ceee4eb2a5fc31e6b184c5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuRoot: {fileID: 3768194101603511030}
+  _panelView: {fileID: 3281818477208832535}
   _scrollRect: {fileID: 2739544601334957416}
   _levelContainer: {fileID: 9171827496516654395}
   _backButton: {fileID: 1075396503062293410}

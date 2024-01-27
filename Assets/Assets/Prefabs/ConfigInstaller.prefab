@@ -45,3 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneConfig: {fileID: 11400000, guid: b93a949e8dfd52d44854a921d44cf244, type: 2}
+  _speakerConfig: {fileID: 11400000, guid: a4448f84ecd0cf84c94dcb24069b06a0, type: 2}
+  _questConfig: {fileID: 11400000, guid: eac0b4216e3f5a445a7dcd8522cae7c9, type: 2}

@@ -15,7 +15,7 @@ namespace Game.Quests
         [SerializeField] private TextMeshProUGUI _progressText;
         [SerializeField] private Slider _progressBar;
 
-        private List<QuestListEntryView> _questListEntries;
+        private readonly List<QuestListEntryView> _questListEntries = new();
 
         protected override ReactiveProperty<bool> Visibility => QuestListModel.Instance.IsVisible;
 

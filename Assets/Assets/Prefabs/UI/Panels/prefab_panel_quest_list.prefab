@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66615baa6545f5b5b2abf34d6bdc02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuRoot: {fileID: 3647852094523639288}
+  _panelView: {fileID: 8780185757083075509}
   _questContent: {fileID: 1701425155479913272}
   _progressText: {fileID: 4734683901909453830}
   _progressBar: {fileID: 1212745978891642418}
@@ -412,6 +412,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 492183963590438670}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8780185757083075509 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9155231831771196603, guid: a860eb227c789594593fd8e1a9abdabc,
+    type: 3}
+  m_PrefabInstance: {fileID: 492183963590438670}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3647852094523639288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bc09e000dfb47fd8aa50c085c093cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4490987711856018050
 PrefabInstance:
   m_ObjectHideFlags: 0

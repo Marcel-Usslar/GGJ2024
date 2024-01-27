@@ -1468,6 +1468,7 @@ GameObject:
   - component: {fileID: 2526198164975342105}
   - component: {fileID: 6016293101075634202}
   - component: {fileID: 250416650153546012}
+  - component: {fileID: 5707645257825641166}
   - component: {fileID: 3774324665187501307}
   m_Layer: 5
   m_Name: prefab_panel_settings
@@ -1574,6 +1575,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 8806320298123008922}
+--- !u!114 &5707645257825641166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768194101603511030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bc09e000dfb47fd8aa50c085c093cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _menuRoot: {fileID: 3768194101603511030}
+  _closeButton: {fileID: 0}
 --- !u!114 &3774324665187501307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1586,7 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2ef6323b734b1a86155533b97f0f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuRoot: {fileID: 3768194101603511030}
+  _panelView: {fileID: 5707645257825641166}
   _backButton: {fileID: 1075396503062293410}
   _musicToggle: {fileID: 2687573771302775877}
   _joystickSizeSlider: {fileID: 7165964712836086920}

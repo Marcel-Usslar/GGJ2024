@@ -6,7 +6,7 @@ namespace Game.UI
 {
     public abstract class BaseSingletonScreen<T> : SingletonMonoBehaviour<T> where T : BaseSingletonScreen<T>
     {
-        [SerializeField] private GameObject _menuRoot;
+        [SerializeField] private PanelView _panelView;
 
         protected abstract ReactiveProperty<bool> Visibility { get; }
 
@@ -16,6 +16,8 @@ namespace Game.UI
         private void Start()
         {
             Visibility.RegisterCallback(UpdateVisibility);
+            if (_panelView.CloseButton != null)
+                _panelView.CloseButton.RegisterClickHandler(_ => Hide());
 
             OnStart();
         }
@@ -23,13 +25,15 @@ namespace Game.UI
         private void OnDestroy()
         {
             Visibility.UnregisterCallback(UpdateVisibility);
+            if (_panelView.CloseButton != null)
+                _panelView.CloseButton.UnregisterClickHandler(_ => Hide());
 
             OnFinalize();
         }
 
         private void UpdateVisibility(bool visible)
         {
-            _menuRoot.SetActive(visible);
+            _panelView.Visible = visible;
             OnVisibilityChanged(visible);
         }
 
