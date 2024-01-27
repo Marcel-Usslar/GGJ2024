@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2631332011484247797}
   - component: {fileID: 6121711232304528630}
   - component: {fileID: 7271327792555329295}
+  - component: {fileID: 6329738516107355425}
   - component: {fileID: 29383037309590851}
   m_Layer: 5
   m_Name: prefab_loading_feedback
@@ -119,6 +120,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 9060346324181303158}
+--- !u!114 &6329738516107355425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729497052815822362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bc09e000dfb47fd8aa50c085c093cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _menuRoot: {fileID: 5832092373276055412}
+  _closeButton: {fileID: 0}
 --- !u!114 &29383037309590851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b71c853427b34a75a3aaad527be4bc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuRoot: {fileID: 5832092373276055412}
+  _panelView: {fileID: 6329738516107355425}
   _fadeInTween: {fileID: 5600260995554094481}
   _fadeOutTween: {fileID: 2231551073109981012}
 --- !u!1 &3799084069180944312
