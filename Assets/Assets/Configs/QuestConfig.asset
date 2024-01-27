@@ -16,18 +16,14 @@ MonoBehaviour:
   _totalQuests: 4
   _questData:
   - QuestName: Wall-Drawing
-    SpeakerName: 
+    SpeakerName: Test
     QuestDescription: 
-    QuestText: 
   - QuestName: Playground
-    SpeakerName: 
+    SpeakerName: Gonzalez
     QuestDescription: 
-    QuestText: 
   - QuestName: Teacher-Lobby
     SpeakerName: Gonzales
-    QuestDescription: 
-    QuestText: Hey, Timmy -> hol mir aus der Lobby meinen Schnuller!
+    QuestDescription: Hey, Timmy -> hol mir aus der Lobby meinen Schnuller!
   - QuestName: Lobby
     SpeakerName: Gonzales
-    QuestDescription: 
-    QuestText: Hey, Timmy -> hol mir aus der Lobby meinen Teller!
+    QuestDescription: Hey, Timmy -> hol mir aus der Lobby meinen Teller!

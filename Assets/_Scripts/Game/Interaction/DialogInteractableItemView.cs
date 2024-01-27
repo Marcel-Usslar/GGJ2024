@@ -20,8 +20,8 @@ namespace Game.Interaction
 
         private void AcceptQuest()
         {
-            QuestSystem.Instance.AcceptQuest(_speakerName);
             TriggerDialog();
+            QuestSystem.Instance.AcceptQuest(_speakerName);
         }
 
         private void TriggerDialog()

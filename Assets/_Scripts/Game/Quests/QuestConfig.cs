@@ -11,14 +11,9 @@ namespace Game.Quests
         [Serializable]
         private class QuestMapping
         {
-            // Quest-Namen/Id
-            // Icon/Sprecher/Namen
-            // Text
-
             public string QuestName;
             public string SpeakerName;
             public string QuestDescription;
-            [TextArea] public string QuestText;
         }
 
         [SerializeField] private QuestListEntryView _prefab;
@@ -41,11 +36,6 @@ namespace Game.Quests
         public string GetQuestDescription(string questName)
         {
             return _questData.First(mapping => mapping.QuestName == questName).QuestDescription;
-        }
-
-        public string GetQuestText(string questName)
-        {
-            return _questData.First(mapping => mapping.QuestName == questName).QuestText;
         }
     }
 }

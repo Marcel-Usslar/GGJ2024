@@ -24,7 +24,7 @@ namespace Game.Quests
                 return false;
 
             var questName = questConfig.GetQuestName(speaker);
-            return !_receivedQuests.Contains(questName) && _completedQuests.Contains(questName);
+            return !_receivedQuests.Contains(questName) && !_completedQuests.Contains(questName);
         }
 
         public void AcceptQuest(string speaker)
