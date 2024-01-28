@@ -49,8 +49,8 @@ namespace Game.Movement
         {
             //Calculate new direction from conditions (I) n * t = 0 and (II) ||t|| = ||input||
 
-            Debug.LogError("input is currently: [0] " + input[0] + ", [1] " + input[1]);
-            Debug.LogError("collisionNormal is currently: [0] " + collisionNormal[0] + ", [1] " + collisionNormal[1]);
+            //Debug.LogError("input is currently: [0] " + input[0] + ", [1] " + input[1]);
+            //Debug.LogError("collisionNormal is currently: [0] " + collisionNormal[0] + ", [1] " + collisionNormal[1]);
 
             Vector2 output = new Vector2(0, 0);
 
@@ -69,16 +69,14 @@ namespace Game.Movement
             }
             else if (t_1_1 * input[0] + t_2_1 * input[1] > 0)
             {
-                Debug.LogError("Entered case 1");
                 output = new Vector2(t_1_1, t_2_1);
             }
             else
             {
-                Debug.LogError("Entered case 2");
                 output = new Vector2(t_1_2, t_2_2);
             }
 
-            Debug.LogError("Changed input into: [0] " + output[0] + ", [1] " + output[1]);
+            //Debug.LogError("Changed input into: [0] " + output[0] + ", [1] " + output[1]);
 
             return output;
         }
