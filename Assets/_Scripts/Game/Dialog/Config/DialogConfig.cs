@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Game.Speaker;
 using UnityEngine;
+using Utility.Pools;
 
 namespace Game.Dialog.Config
 {
-    public class DialogConfig : ScriptableObject
+    public class DialogConfig : ScriptableObject, IPooledViewConfig<DialogChoiceView>
     {
         [Serializable]
         private class DialogMapping
@@ -23,7 +24,10 @@ namespace Game.Dialog.Config
             [TextArea] public string Text;
         }
 
+        [SerializeField] private DialogChoiceView _prefab;
         [SerializeField] private List<DialogMapping> _dialogData;
+
+        public DialogChoiceView Prefab => _prefab;
 
         public bool HasNextDialog(DialogId dialogId, int index)
         {

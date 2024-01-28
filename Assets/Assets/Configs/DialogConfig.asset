@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77ea44a91f2a5a4bbbd48824ea6cf31, type: 3}
   m_Name: DialogConfig
   m_EditorClassIdentifier: 
+  _prefab: {fileID: 2624965553447206247, guid: 8c18c0888168dae48b84d450da3d7353, type: 3}
   _dialogData:
   - Name: KBaby1-0
     Id:
