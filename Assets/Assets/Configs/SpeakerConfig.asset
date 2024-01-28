@@ -43,18 +43,39 @@ MonoBehaviour:
   - Speaker: 201
     Name: Mama
     Icon: {fileID: 21300000, guid: 95f1be7a347375647930393baaf6e142, type: 3}
-  - Speaker: 202
-    Name: Angelika
-    Icon: {fileID: 21300000, guid: 28184a4286d0396418b675bb47e91db0, type: 3}
   - Speaker: 203
     Name: Papa
     Icon: {fileID: 21300000, guid: 48b9c2b6b62d2534280db554503b9687, type: 3}
-  - Speaker: 204
-    Name: Kalle
-    Icon: {fileID: 21300000, guid: 18ac1541761352a4fbaccfcffe9fd2c1, type: 3}
   - Speaker: 205
     Name: Frau Rosenthal
     Icon: {fileID: 21300000, guid: 0e7a6e317c00290408701c1115a5273e, type: 3}
+  - Speaker: 202
+    Name: Angelika
+    Icon: {fileID: 21300000, guid: 28184a4286d0396418b675bb47e91db0, type: 3}
+  - Speaker: 204
+    Name: Kalle
+    Icon: {fileID: 21300000, guid: 18ac1541761352a4fbaccfcffe9fd2c1, type: 3}
   - Speaker: 206
     Name: Malice
     Icon: {fileID: 21300000, guid: e1201468040c8d94486d26d2ec15dd3e, type: 3}
+  - Speaker: 106
+    Name: Tiana
+    Icon: {fileID: 21300000, guid: 0e15df95f7fa6864b8d89d951d51dda0, type: 3}
+  - Speaker: 107
+    Name: Nikolai
+    Icon: {fileID: 21300000, guid: bd538c17509427b41a3a2e3aeb86c8b0, type: 3}
+  - Speaker: 108
+    Name: Silas
+    Icon: {fileID: 21300000, guid: f088f7b8e7f7a0e49b7cd53300995222, type: 3}
+  - Speaker: 301
+    Name: 
+    Icon: {fileID: 0}
+  - Speaker: 303
+    Name: 
+    Icon: {fileID: 0}
+  - Speaker: 302
+    Name: 
+    Icon: {fileID: 0}
+  - Speaker: 304
+    Name: 
+    Icon: {fileID: 0}
