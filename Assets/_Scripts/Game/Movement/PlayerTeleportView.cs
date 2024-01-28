@@ -1,4 +1,5 @@
 using Game.Area;
+using Game.Camera;
 using UnityEngine;
 
 namespace Game.Movement
@@ -22,6 +23,7 @@ namespace Game.Movement
         {
             _player.position = position;
             _playerMovement.Position.Value = position;
+            VirtualCameraView.Instance.Toggle();
         }
     }
 }

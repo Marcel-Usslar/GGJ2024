@@ -895,11 +895,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
-    - target: {fileID: 278171317892688618, guid: 4fe1c3afef134c04e9b620052770bde2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fe1c3afef134c04e9b620052770bde2, type: 3}
 --- !u!1 &1758450715

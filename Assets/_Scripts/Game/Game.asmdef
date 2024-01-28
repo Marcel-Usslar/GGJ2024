@@ -8,7 +8,8 @@
         "DebugLogger",
         "ReactiveButton",
         "Utility",
-        "Unity.TextMeshPro"
+        "Unity.TextMeshPro",
+        "Cinemachine"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
