@@ -8,6 +8,7 @@ namespace Game.Movement
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] private float _speed;
+        [SerializeField] private float _radius;
         [Space]
         [SerializeField] private LayerMask _hitLayerMask;
         [SerializeField] private Rigidbody2D _rigidbody;
@@ -29,13 +30,14 @@ namespace Game.Movement
                 : InputModel.Instance.NormalizedInput;
             var deltaTime = Time.fixedDeltaTime;
 
-            var hit = Physics2D.Raycast(_rigidbody.position, input, 1, _hitLayerMask);
+            var unitsPerSecond = deltaTime * _speed;
+            var hit = Physics2D.CircleCast(_rigidbody.position, _radius, input, unitsPerSecond * deltaTime, _hitLayerMask);
             if (hit.collider != null)
             {
                 input = CalculateInputAfterCollision(input, hit.normal);
             }
 
-            _rigidbody.velocity = input * deltaTime * _speed;
+            _rigidbody.velocity = input * unitsPerSecond;
             Position.Value = _rigidbody.position;
 
             var direction = InputModel.Instance.NormalizedInput == Vector2.zero
