@@ -9,7 +9,7 @@ namespace Game.Area
         public AreaId AreaId => _areaId;
         public Vector2 Position => transform.position;
 
-        private void Start()
+        private void Awake()
         {
             AreaManagementService.Instance.RegisterArea(this);
         }
