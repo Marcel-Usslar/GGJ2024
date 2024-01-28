@@ -13,7 +13,48 @@ MonoBehaviour:
   m_Name: SpeakerConfig
   m_EditorClassIdentifier: 
   _speakerData:
-  - SpeakerName: Gonzalez
-    Icon: {fileID: 21300000, guid: 1e2d444ae9d5a4ff1b47ffec28d5165c, type: 3}
-  - SpeakerName: Test
-    Icon: {fileID: 21300000, guid: b69c9e0b4f478f94a8b015db733dc6f7, type: 3}
+  - Speaker: 1
+    Name: Gonzales
+    Icon: {fileID: 21300000, guid: 162ab19fccba9d441ab82bf52433a2ab, type: 3}
+  - Speaker: 2
+    Name: Gonzales
+    Icon: {fileID: 21300000, guid: 6060ae78562adf341968c5031e1bf499, type: 3}
+  - Speaker: 11
+    Name: Gonzales
+    Icon: {fileID: 21300000, guid: 103b18f0c3f52314989791cb7dd5515f, type: 3}
+  - Speaker: 12
+    Name: Gonzales
+    Icon: {fileID: 21300000, guid: 53057ac10b7b26a44b5212f1fed64d2c, type: 3}
+  - Speaker: 101
+    Name: 
+    Icon: {fileID: 21300000, guid: a3d5ff27f5d391f4fbd213ea1b687a34, type: 3}
+  - Speaker: 102
+    Name: 
+    Icon: {fileID: 21300000, guid: a3d5ff27f5d391f4fbd213ea1b687a34, type: 3}
+  - Speaker: 103
+    Name: 
+    Icon: {fileID: 21300000, guid: fce7cf54f7dc81c4a8bb82e7239847b0, type: 3}
+  - Speaker: 104
+    Name: 
+    Icon: {fileID: 21300000, guid: e327431d09a69bd41aed6780b189934e, type: 3}
+  - Speaker: 105
+    Name: 
+    Icon: {fileID: 21300000, guid: 5a4283c3db636c446b65fc434d9cbaed, type: 3}
+  - Speaker: 201
+    Name: 
+    Icon: {fileID: 21300000, guid: 95f1be7a347375647930393baaf6e142, type: 3}
+  - Speaker: 202
+    Name: 
+    Icon: {fileID: 21300000, guid: 28184a4286d0396418b675bb47e91db0, type: 3}
+  - Speaker: 203
+    Name: 
+    Icon: {fileID: 21300000, guid: 48b9c2b6b62d2534280db554503b9687, type: 3}
+  - Speaker: 204
+    Name: 
+    Icon: {fileID: 21300000, guid: 18ac1541761352a4fbaccfcffe9fd2c1, type: 3}
+  - Speaker: 205
+    Name: 
+    Icon: {fileID: 21300000, guid: 0e7a6e317c00290408701c1115a5273e, type: 3}
+  - Speaker: 206
+    Name: 
+    Icon: {fileID: 21300000, guid: e1201468040c8d94486d26d2ec15dd3e, type: 3}

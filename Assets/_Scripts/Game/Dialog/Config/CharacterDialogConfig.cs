@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Game.Speaker;
 using UnityEngine;
 
 namespace Game.Dialog.Config
@@ -10,7 +11,7 @@ namespace Game.Dialog.Config
         [Serializable]
         private class CharacterDialogMapping
         {
-            public string Speaker;
+            public SpeakerType Speaker;
             public List<DialogStateMapping> DialogStateData;
         }
         [Serializable]
@@ -22,7 +23,7 @@ namespace Game.Dialog.Config
 
         [SerializeField] private List<CharacterDialogMapping> _characterDialogData;
 
-        public int GetDialogId(string speaker, int state)
+        public int GetDialogId(SpeakerType speaker, int state)
         {
             return _characterDialogData.First(mapping => mapping.Speaker == speaker)
                 .DialogStateData.First(mapping => mapping.State == state)

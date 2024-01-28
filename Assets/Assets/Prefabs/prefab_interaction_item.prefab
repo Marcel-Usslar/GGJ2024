@@ -411,5 +411,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactCanvas: {fileID: 6873763619700374830}
   _interactButton: {fileID: 2629747615073003457}
-  _speakerName: 
+  _speaker: 0
   _dialogStateView: {fileID: 0}

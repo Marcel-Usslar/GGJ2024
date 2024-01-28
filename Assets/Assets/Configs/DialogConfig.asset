@@ -15,17 +15,17 @@ MonoBehaviour:
   _dialogData:
   - DialogID: 1
     DialogSpeakerData:
-    - Speaker: Test
+    - Speaker: 101
       Text: agoprghaeropihaeroag oprghaeropihaeroa goprghaeropihaeroagoprghae ropihaero
-    - Speaker: Gonzalez
+    - Speaker: 1
       Text: Wie bitte?
-    - Speaker: Test
+    - Speaker: 101
       Text: Das ist meine dritte Nachricht
   - DialogID: 2
     DialogSpeakerData:
-    - Speaker: Test
+    - Speaker: 101
       Text: Warum bist du noch hier?
   - DialogID: 3
     DialogSpeakerData:
-    - Speaker: Test
+    - Speaker: 101
       Text: Dankeeee!?

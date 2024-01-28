@@ -10,15 +10,21 @@ namespace Game.Speaker
         [Serializable]
         private class SpeakerMapping
         {
-            public string SpeakerName;
+            public SpeakerType Speaker;
+            public string Name;
             public Sprite Icon;
         }
 
         [SerializeField] private List<SpeakerMapping> _speakerData;
 
-        public Sprite GetSpeakerIcon(string speakerName)
+        public string GetSpeakerName(SpeakerType speaker)
         {
-            return _speakerData.First(mapping => mapping.SpeakerName == speakerName).Icon;
+            return _speakerData.First(mapping => mapping.Speaker == speaker).Name;
+        }
+
+        public Sprite GetSpeakerIcon(SpeakerType speaker)
+        {
+            return _speakerData.First(mapping => mapping.Speaker == speaker).Icon;
         }
     }
 }
