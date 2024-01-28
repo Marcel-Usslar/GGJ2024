@@ -11,19 +11,19 @@ namespace Game.Movement
 
         private void Start()
         {
-            AreaManagementService.Instance.OnTeleport.RegisterCallback(Teleport);
+            AreaManagementService.Instance.CurrentArea.RegisterCallback(Teleport);
         }
 
         private void OnDestroy()
         {
-            AreaManagementService.Instance.OnTeleport.UnregisterCallback(Teleport);
+            AreaManagementService.Instance.CurrentArea.UnregisterCallback(Teleport);
         }
 
-        private void Teleport(Vector2 position)
+        private void Teleport(AreaId id)
         {
+            var position = AreaManagementService.Instance.GetAreaPosition(id);
             _player.position = position;
             _playerMovement.Position.Value = position;
-            VirtualCameraView.Instance.Toggle();
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Game.Area
     {
         private readonly Dictionary<AreaId, AreaView> _areas = new();
 
-        public CallbackHandler<Vector2> OnTeleport { get; } = new();
+        public ReactiveProperty<AreaId> CurrentArea { get; } = new(AreaId.StairsBathDry);
 
         public void TeleportTo(AreaId id)
         {
@@ -19,8 +19,12 @@ namespace Game.Area
                 return;
             }
 
-            var area = _areas[id];
-            OnTeleport.Trigger(area.Position);
+            CurrentArea.Value = id;
+        }
+
+        public Vector2 GetAreaPosition(AreaId id)
+        {
+            return _areas[id].Position;
         }
 
         public void RegisterArea(AreaView view)
