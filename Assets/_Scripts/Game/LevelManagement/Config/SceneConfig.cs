@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-namespace Game.LevelManagement
+namespace Game.LevelManagement.Config
 {
     public class SceneConfig : ScriptableObject, ISceneConfig
     {

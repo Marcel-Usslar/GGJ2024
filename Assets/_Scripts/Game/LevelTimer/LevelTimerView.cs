@@ -1,7 +1,9 @@
 using System;
+using Game.GameState;
 using Game.Utility;
 using TMPro;
 using UnityEngine;
+using Utility;
 
 namespace Game.LevelTimer
 {
@@ -9,59 +11,51 @@ namespace Game.LevelTimer
     {
         [SerializeField] private TextMeshProUGUI _timerText;
 
-        public string TimerText { set => _timerText.text = value; }
+        public DateTime CurrentTime { set => _timerText.text = $"{value.Hour:00}:{value.Minute:00}"; }
 
-        float timeCountSinceLevelStart = 0;
-        bool timeIsUpdated = true;
+        private float _timeCountSinceLevelStart;
 
-        // Start is called before the first frame update
-        void Start()
+        private DateTime _startTime;
+        private float _roundedPassedTime;
+
+        private void Awake()
         {
-
+            var config = ConfigSingletonInstaller.Instance.LevelTimerConfig;
+            _startTime = DateTime.MinValue.AddHours(config.GameTimeStartHours);
+            CurrentTime = _startTime;
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            if (timeIsUpdated) { 
-                timeCountSinceLevelStart += Time.deltaTime;
-                CheckTimeIsUp();
-                TimerText = GetInGameTime(timeCountSinceLevelStart);
-            }
-            else {
-                PrintMessage("TimeUp");
-            }
+            if (GameStateModel.Instance.IsPaused.Value)
+                return;
+
+            _timeCountSinceLevelStart += Time.deltaTime;
+
+            var totalRealTime = ConfigSingletonInstaller.Instance.LevelTimerConfig.TotalLevelRealTimeSeconds;
+            var overTotalTime = _timeCountSinceLevelStart > totalRealTime;
+
+            if (overTotalTime)
+                _timeCountSinceLevelStart = totalRealTime;
+
+            var passedTime = GetRoundedPassedTime(_timeCountSinceLevelStart);
+            if (_roundedPassedTime.AlmostEqual(passedTime))
+                return;
+
+            _roundedPassedTime = passedTime;
+            CurrentTime = _startTime.AddHours(_roundedPassedTime);
         }
 
-        public void CheckTimeIsUp() {            
-            timeIsUpdated = (timeCountSinceLevelStart <= ConfigSingletonInstaller.Instance.LevelTimerConfig.realLifeTimeUntilEndOfLevel_secs);
-        }
-
-        public void PrintMessage(string Trigger)
+        private float GetRoundedPassedTime(float passedSeconds)
         {
-            string messageString = "";
+            var config = ConfigSingletonInstaller.Instance.LevelTimerConfig;
+            var startTime = config.GameTimeStartHours;
+            var endTime = config.GameTimeEndHours;
+            var totalRealTimeSeconds = config.TotalLevelRealTimeSeconds;
+            var timeStep = config.GameTimeHourSteps;
 
-            switch (Trigger) {
-                case "TimeUp":
-                    messageString = "Your time is up!";
-                    break;
-                default:
-                    break;
-            }
-            Debug.LogError(messageString);
-        }
-
-        public string GetInGameTime(float realLifeTime)
-        {
-            DateTime startDate = DateTime.MinValue.AddHours(ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameStartTime);
-            float passedTimeInGame = (ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameEndTime -
-                                ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameStartTime) *
-                realLifeTime / ConfigSingletonInstaller.Instance.LevelTimerConfig.realLifeTimeUntilEndOfLevel_secs;
-            float quantiledPassedTimeInGame = ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameTimeStep * (int) (passedTimeInGame / ConfigSingletonInstaller.Instance.LevelTimerConfig.inGameTimeStep);
-            DateTime currentTimeInGame = startDate.AddHours(quantiledPassedTimeInGame);
-
-            //return currentTimeInGame.ToString(@"hh\:mm");
-            return currentTimeInGame.ToString("t");
+            var passedInGameTime = (endTime - startTime) * passedSeconds / totalRealTimeSeconds;
+            return timeStep * (int) (passedInGameTime / timeStep);
         }
     }
 }

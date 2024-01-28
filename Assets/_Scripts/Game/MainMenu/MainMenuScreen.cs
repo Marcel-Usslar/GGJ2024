@@ -1,4 +1,5 @@
 using CustomButton;
+using Game.LevelManagement;
 using Game.UI;
 using UnityEngine;
 using Utility;
@@ -15,22 +16,23 @@ namespace Game.MainMenu
 
         protected override void OnStart()
         {
-            _startButton.RegisterClickHandler(_ => ShowLevelSelection());
+            _startButton.RegisterClickHandler(_ => StartGame());
             _settingsButton.RegisterClickHandler(_ => ShowSettings());
             _quitButton.RegisterClickHandler(_ => QuitGame());
         }
 
         protected override void OnFinalize()
         {
-            _startButton.UnregisterClickHandler(_ => ShowLevelSelection());
+            _startButton.UnregisterClickHandler(_ => StartGame());
             _settingsButton.UnregisterClickHandler(_ => ShowSettings());
             _quitButton.UnregisterClickHandler(_ => QuitGame());
         }
 
-        private void ShowLevelSelection()
+        private void StartGame()
         {
             Hide();
-            MenuModel.Instance.ShowLevelSelection.Value = true;
+
+            LevelLoadingModel.Instance.LoadLevel();
         }
 
         private void ShowSettings()

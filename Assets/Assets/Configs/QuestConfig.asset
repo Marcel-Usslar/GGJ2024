@@ -17,7 +17,7 @@ MonoBehaviour:
   _questData:
   - QuestName: Wall-Drawing
     Speaker: 101
-    QuestDescription: 
+    QuestDescription: Draw on the wall!
   - QuestName: Playground
     Speaker: 102
     QuestDescription: 

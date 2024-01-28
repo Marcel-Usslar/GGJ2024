@@ -41,7 +41,7 @@ namespace Game.MainMenu
             _musicToggle.Button
                 .RegisterClickHandler(_ => SettingsModel.Instance.IsMusicMuted.Value = !SettingsModel.Instance.IsMusicMuted.Value);
 
-            _backButton.RegisterClickHandler(_ => ReturnToMainMenu());
+            _backButton.RegisterClickHandler(_ => OnReturn());
 
             _joystickSettingsMappings.ForEach(mapping => SettingsModel.Instance.JoystickSetting
                 .RegisterCallback(setting => mapping.RadioButton.IsSelected = setting == mapping.Setting));
@@ -57,7 +57,7 @@ namespace Game.MainMenu
             _musicToggle.Button
                 .UnregisterClickHandler(_ => SettingsModel.Instance.IsMusicMuted.Value = !SettingsModel.Instance.IsMusicMuted.Value);
 
-            _backButton.UnregisterClickHandler(_ => ReturnToMainMenu());
+            _backButton.UnregisterClickHandler(_ => OnReturn());
 
             _joystickSettingsMappings.ForEach(mapping => SettingsModel.Instance.JoystickSetting
                 .UnregisterCallback(setting => mapping.RadioButton.IsSelected = setting == mapping.Setting));
@@ -66,7 +66,7 @@ namespace Game.MainMenu
                 .UnregisterClickHandler(_ => SettingsModel.Instance.JoystickSetting.Value = mapping.Setting));
         }
 
-        private void ReturnToMainMenu()
+        private void OnReturn()
         {
             Hide();
 

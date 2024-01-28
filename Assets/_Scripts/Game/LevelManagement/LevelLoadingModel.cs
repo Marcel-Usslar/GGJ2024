@@ -12,6 +12,7 @@ namespace Game.LevelManagement
 
         public void LoadLevel()
         {
+            GameStateModel.Instance.IsPaused.Value = true;
             LoadingFeedbackModel.Instance.ShowLoadingFeedback.Value = true;
             LoadingFeedbackModel.Instance.OnFadeInCompleted
                 .RegisterCallback(() => LevelManagementService.Instance.LoadGame(OnGameLoaded));
@@ -32,6 +33,8 @@ namespace Game.LevelManagement
 
             LoadingFeedbackModel.Instance.ShowLoadingFeedback.Value = false;
 
+            LoadingFeedbackModel.Instance.OnFadeOutCompleted.RegisterCallback(OnFadeOutCompleted);
+
             LoadingFeedbackModel.Instance.OnFadeInCompleted
                 .UnregisterCallback(() => LevelManagementService.Instance.LoadGame(OnGameLoaded));
         }
@@ -45,6 +48,13 @@ namespace Game.LevelManagement
 
             LoadingFeedbackModel.Instance.OnFadeInCompleted
                 .UnregisterCallback(() => LevelManagementService.Instance.UnloadGame(OnGameUnloaded));
+        }
+
+        private void OnFadeOutCompleted()
+        {
+            GameStateModel.Instance.IsPaused.Value = false;
+
+            LoadingFeedbackModel.Instance.OnFadeOutCompleted.UnregisterCallback(OnFadeOutCompleted);
         }
     }
 }

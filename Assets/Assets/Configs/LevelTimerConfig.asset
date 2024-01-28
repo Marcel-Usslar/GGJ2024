@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994ab8aa6a383af49a2f0d224e7bee44, type: 3}
   m_Name: LevelTimerConfig
   m_EditorClassIdentifier: 
-  realLifeTimeUntilEndOfLevel_secs: 60
-  inGameStartTime: 6
-  inGameEndTime: 18
-  inGameTimeStep: 0.25
+  _totalLevelRealTimeSeconds: 60
+  _gameTimeStartHours: 6
+  _gameTimeEndHours: 18
+  _gameTimeHourSteps: 0.016666668

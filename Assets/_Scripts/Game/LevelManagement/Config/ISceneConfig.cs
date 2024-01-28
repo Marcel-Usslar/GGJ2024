@@ -1,4 +1,4 @@
-﻿namespace Game.LevelManagement
+namespace Game.LevelManagement.Config
 {
     public interface ISceneConfig
     {

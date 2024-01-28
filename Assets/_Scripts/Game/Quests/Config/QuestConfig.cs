@@ -5,7 +5,7 @@ using Game.Speaker;
 using UnityEngine;
 using Utility.Pools;
 
-namespace Game.Quests
+namespace Game.Quests.Config
 {
     public class QuestConfig : ScriptableObject, IPooledViewConfig<QuestListEntryView>
     {
@@ -37,6 +37,11 @@ namespace Game.Quests
         public string GetQuestDescription(string questName)
         {
             return _questData.First(mapping => mapping.QuestName == questName).QuestDescription;
+        }
+
+        public SpeakerType GetQuestSpeaker(string questName)
+        {
+            return _questData.First(mapping => mapping.QuestName == questName).Speaker;
         }
     }
 }

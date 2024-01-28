@@ -1,7 +1,8 @@
 ﻿using Game.Dialog.Config;
-using Game.LevelManagement;
-using Game.Quests;
-using Game.Speaker;
+using Game.LevelManagement.Config;
+using Game.LevelTimer.Config;
+using Game.Quests.Config;
+using Game.Speaker.Config;
 using UnityEngine;
 using Utility.Singletons;
 
