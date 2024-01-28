@@ -8,11 +8,13 @@ namespace Game.Interaction
     public class PlayerInteractionModel : SingletonModel<PlayerInteractionModel>
     {
         private readonly List<InteractableItemView> _interactableItems = new();
+        private Vector2 _position;
 
         public InteractableItemView CurrentInteractable { get; private set; }
 
         public void CalculateCurrentInteractable(Vector2 position)
         {
+            _position = position;
             if (_interactableItems.Count == 0)
             {
                 CurrentInteractable = null;
@@ -20,7 +22,7 @@ namespace Game.Interaction
             }
 
             CurrentInteractable = _interactableItems
-                .OrderByDescending(view => Vector2.Distance(position, view.Position))
+                .OrderBy(view => Vector2.Distance(_position, view.Position))
                 .First();
         }
 
@@ -30,11 +32,13 @@ namespace Game.Interaction
                 return;
 
             _interactableItems.Add(itemView);
+            CalculateCurrentInteractable(_position);
         }
 
         public void RemoveInteractableItem(InteractableItemView view)
         {
             _interactableItems.Remove(view);
+            CalculateCurrentInteractable(_position);
         }
     }
 }
