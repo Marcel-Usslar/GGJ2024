@@ -1,4 +1,4 @@
-﻿using Game.Dialog;
+﻿using Game.Dialog.Config;
 using Game.LevelManagement;
 using Game.Quests;
 using Game.Speaker;

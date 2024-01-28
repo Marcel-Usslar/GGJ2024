@@ -13,6 +13,7 @@ namespace Game.Quests
         public IEnumerable<string> ReceivedQuests => _receivedQuests;
         public IEnumerable<string> CompletedQuests => _completedQuests;
 
+        public CallbackHandler<string> OnQuestAccepted { get; } = new();
         public CallbackHandler<string> OnQuestCompleted { get; } = new();
 
         public bool HasQuest(string speaker)
@@ -23,7 +24,7 @@ namespace Game.Quests
                 return false;
 
             var questName = questConfig.GetQuestName(speaker);
-            return !_receivedQuests.Contains(questName) && _completedQuests.Contains(questName);
+            return !_receivedQuests.Contains(questName) && !_completedQuests.Contains(questName);
         }
 
         public void AcceptQuest(string speaker)
@@ -32,6 +33,7 @@ namespace Game.Quests
             var questName = questConfig.GetQuestName(speaker);
 
             _receivedQuests.Add(questName);
+            OnQuestAccepted.Trigger(questName);
         }
 
         public void CompleteQuest(string quest)

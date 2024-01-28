@@ -1,19 +1,38 @@
 using Game.Utility;
-using UnityEngine;
+using Utility;
 using Utility.Singletons;
 
 namespace Game.Dialog
 {
-    public class DialogSystem : SingletonMonoBehaviour<DialogSystem>
+    public class DialogSystem : SingletonModel<DialogSystem>
     {
-        override protected void OnInitialize()
+        public CallbackHandler<DialogDto> OnDialog { get; } = new();
+        public CallbackHandler OnDialogCompleted { get; } = new();
+
+        private int _dialogId;
+        private int _dialogIndex;
+
+        public void TriggerDialog(string speakerName, int state)
         {
-            ConfigSingletonInstaller.Instance.DialogConfig.ResetDialogs();
+            var dialogConfig = ConfigSingletonInstaller.Instance.CharacterDialogConfig;
+
+            _dialogId = dialogConfig.GetDialogId(speakerName, state);
+            _dialogIndex = 0;
+
+            OnDialog.Trigger(new DialogDto(_dialogId, _dialogIndex));
         }
-        public void TriggerDialog(int dialogId)
+
+        public void Continue()
         {
-            var message = ConfigSingletonInstaller.Instance.DialogConfig.GetNextDialog(dialogId);
-            Debug.LogError(message);
+            var dialogConfig = ConfigSingletonInstaller.Instance.DialogConfig;
+            if (!dialogConfig.HasNextDialog(_dialogId, _dialogIndex))
+            {
+                OnDialogCompleted.Trigger();
+                return;
+            }
+
+            _dialogIndex++;
+            OnDialog.Trigger(new DialogDto(_dialogId, _dialogIndex));
         }
     }
 }

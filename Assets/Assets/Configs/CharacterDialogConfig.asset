@@ -17,3 +17,7 @@ MonoBehaviour:
     DialogStateData:
     - State: 0
       DialogId: 1
+    - State: 1
+      DialogId: 2
+    - State: 2
+      DialogId: 3

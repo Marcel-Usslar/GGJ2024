@@ -6,8 +6,6 @@ namespace Game.Interaction
     {
         [SerializeField] private string _id;
 
-        public override string Id => _id;
-
         public override void Interact()
         {
             Debug.LogError($"Interacting with {_id}");
