@@ -82,3 +82,21 @@ MonoBehaviour:
   - Speaker: 305
     Name: 
     Icon: {fileID: 0}
+  - Speaker: 109
+    Name: Louis
+    Icon: {fileID: 0}
+  - Speaker: 207
+    Name: Herr Schmidt
+    Icon: {fileID: 0}
+  - Speaker: 208
+    Name: Frau Meier
+    Icon: {fileID: 0}
+  - Speaker: 209
+    Name: Frau Apfel
+    Icon: {fileID: 0}
+  - Speaker: 312
+    Name: 
+    Icon: {fileID: 0}
+  - Speaker: 110
+    Name: Britta
+    Icon: {fileID: 0}

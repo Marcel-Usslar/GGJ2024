@@ -35,3 +35,7 @@ MonoBehaviour:
     QuestName: Sinflut
     Speaker: 305
     QuestDescription: Setze das Badezimmer unter Wasser.
+  - Type: 5
+    QuestName: Kaugummi entsorgen
+    Speaker: 109
+    QuestDescription: Entsorge den Kaugummi, den du von Louis bekommen hast.
