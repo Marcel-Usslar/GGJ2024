@@ -186,21 +186,6 @@ MonoBehaviour:
       Text: Puh, ich bin gerade fertig geworden die Wand sauber zu machen.
     - Speaker: 204
       Text: Standig malt hier jemand mit einem Stift dran herum.
-  - Name: Betreuer1-1
-    Id:
-      Speaker: 204
-      State: 1
-    DialogSpeakerData:
-    - Speaker: 204
-      Text: "STOP! Ich wei\xDF, dass ihr gerne malt, aber NICHT auf diese Wand!"
-  - Name: Betreuer1-2
-    Id:
-      Speaker: 204
-      State: 2
-    DialogSpeakerData:
-    - Speaker: 204
-      Text: "Wenn du das nicht SOFORT sein l\xE4sst, muss ich sp\xE4ter mit deinen
-        Eltern reden!"
   - Name: Betreuerin1-2
     Id:
       Speaker: 202
@@ -365,3 +350,56 @@ MonoBehaviour:
         im Treppenhaus direkt vor dem Spielzimmer."
     - Speaker: 108
       Text: ' Es sind die roten "Paleos" mit dem Dino-Motiv.'
+  - Name: Schrank1-0
+    Id:
+      Speaker: 301
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 301
+      Text: "Der Schrank ist voller Spielsachen. Oben auf dem Schrank siehst du eine
+        T\xFCte Gummib\xE4rchen, die Angelika zu besonderen Anl\xE4ssen verteilt."
+  - Name: Wand-0
+    Id:
+      Speaker: 303
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 303
+      Text: "Eine gro\xDFe, leere Wand, die noch nicht mit Bildern der anderen Kinder
+        dekoriert wurde."
+  - Name: Wand-1
+    Id:
+      Speaker: 303
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 204
+      Text: "STOP! Ich wei\xDF, dass ihr gerne malt, aber NICHT auf diese Wand!"
+  - Name: Wand-2
+    Id:
+      Speaker: 303
+      State: 2
+    DialogSpeakerData:
+    - Speaker: 204
+      Text: "Wenn du das nicht SOFORT sein l\xE4sst, muss ich sp\xE4ter mit deinen
+        Eltern reden!"
+  - Name: Stift-0
+    Id:
+      Speaker: 302
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 302
+      Text: "Da liegt ein gr\xFCner Malstift."
+  - Name: Schuhschrank-0
+    Id:
+      Speaker: 304
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 304
+      Text: "Ein Schrank voller Schuhe. Du kannst nicht erkennen, wem welche Schuhe
+        geh\xF6ren."
+  - Name: Schuhschrank-1
+    Id:
+      Speaker: 304
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 304
+      Text: Ein Schrank voller Schuhe. Du siehst auch die roten "Paleos" von Silas.

@@ -67,3 +67,15 @@ MonoBehaviour:
   - Speaker: 108
     Name: Silas
     Icon: {fileID: 21300000, guid: f088f7b8e7f7a0e49b7cd53300995222, type: 3}
+  - Speaker: 301
+    Name: 
+    Icon: {fileID: 0}
+  - Speaker: 303
+    Name: 
+    Icon: {fileID: 0}
+  - Speaker: 302
+    Name: 
+    Icon: {fileID: 0}
+  - Speaker: 304
+    Name: 
+    Icon: {fileID: 0}

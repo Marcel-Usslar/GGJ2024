@@ -20,5 +20,9 @@ namespace Game.Speaker
         Betreuer1 = 204,
         Direktorin = 205,
         Betreuerin2 = 206,
+        Schrank1 = 301,
+        Stift = 302,
+        Wand = 303,
+        Schuhschrank = 304,
     }
 }
