@@ -26,7 +26,7 @@ namespace Game.Interaction
             QuestSystem.Instance.AcceptQuest(questConfig.GetQuestType(_speaker));
         }
 
-        private void TriggerDialog()
+        protected void TriggerDialog()
         {
             var id = new DialogId(_speaker, _dialogStateView.State);
             DialogSystem.Instance.TriggerDialog(id);
