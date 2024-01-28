@@ -33,10 +33,12 @@ namespace Game.Speaker
         KWaschbecken = 305,
         SLehrertisch = 306,
         SFrosch = 307,
-        SKäfig = 308,
+        SKaefig = 308,
         SRanzen = 309,
         STascheDerLehrerin = 310,
         STelefon = 311,
         SSitzplan = 312,
+        STischVonKaugummiopfer = 313,
+        SLehrerstuhl = 314,
     }
 }

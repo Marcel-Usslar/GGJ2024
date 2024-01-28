@@ -473,3 +473,195 @@ MonoBehaviour:
       Text: Ihhh, gehst du auch in diese Klasse?
     - Speaker: 11
       Text: Ja, du doofe Kuh.
+  - Name: SKaugummiopfer-1
+    Id:
+      Speaker: 110
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: '*versucht Britta den Kaugummi in die Haare zu schmieren*'
+    - Speaker: 207
+      Text: "Nein, Gonzalita. Kaugummis geh\xF6ren nur in den M\xFClleimer."
+    - Speaker: 12
+      Text: "*muss den Kaugummi in den M\xFClleimer werfen*"
+  - Name: STischVonKaugummiopfer-0
+    Id:
+      Speaker: 313
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: '*versucht den Kaugummi unter den Tisch von Britta zu kleben*'
+    - Speaker: 207
+      Text: "Nein, Gonzalita. Kaugummis geh\xF6ren nur in den M\xFClleimer."
+    - Speaker: 12
+      Text: "*muss den Kaugummi in den M\xFClleimer werfen*"
+  - Name: STischVonKaugummiopfer-1
+    Id:
+      Speaker: 313
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: '*versucht den Kaugummi unter den Tisch von Britta zu kleben*'
+    - Speaker: 110
+      Text: Oh nein, das machst du nicht. *zieht dir an den Haaren*
+    - Speaker: 12
+      Text: '*du verschluckst vor Schreck den Kaugummi*'
+  - Name: STischVonKaugummiopfer-2
+    Id:
+      Speaker: 313
+      State: 2
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: '*Klebt den Kaugummi unter den Tisch von Britta und entfernt sich wieder
+        schnell vom Tisch*'
+    - Speaker: 110
+      Text: '*Setzt sich an den Tisch und schmiert sich den Kaugummi an die Hose.*
+        Ihhh, wer war das?'
+    - Speaker: 11
+      Text: Hihihi...
+  - Name: SLehrertisch-0
+    Id:
+      Speaker: 306
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 306
+      Text: "Du findest eine Rei\xDFzwecke auf dem Lehrertisch und nimmst sie an
+        dich."
+  - Name: SLehrerstuhl-0
+    Id:
+      Speaker: 314
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: "Du versuchst die Rei\xDFzwecke auf dem Lehrerstuhl so zu verstecken,
+        dass sie den Lehrer in den Hintern piekst, wenn er sich setzt."
+    - Speaker: 110
+      Text: "Sowas macht man doch nicht. Gib mir die Rei\xDFzwecke. Das erz\xE4hle
+        ich gleich Herr Schmidt."
+  - Name: SLehrerstuhl-1
+    Id:
+      Speaker: 314
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: "Du versuchst die Rei\xDFzwecke auf dem Lehrerstuhl so zu verstecken,
+        dass sie den Lehrer in den Hintern piekst, wenn er sich setzt."
+  - Name: SHortnerin-0
+    Id:
+      Speaker: 208
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 208
+      Text: "Jetzt ist erstmal gro\xDFe Pause. Da k\xF6nnt ihr auf dem Hof spielen
+        gehen."
+  - Name: SFrosch-0
+    Id:
+      Speaker: 307
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 307
+      Text: "\xDCber den Schulhof h\xFCpft ein Frosch."
+    - Speaker: 11
+      Text: "Du siehst ihn und denkst dir, wenn ich den mitnehme und sp\xE4ter freilasse,
+        wird das bestimmt lustig."
+    - Speaker: 11
+      Text: '*Du steckst den Frosch vorsichtig in deine Tasche*'
+  - Name: SKlettergeruestkind-0
+    Id:
+      Speaker: 111
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: Hi Mike, was machst du da?
+    - Speaker: 111
+      Text: Ich klettere hier, dass siehst du doch. Lass mich in Ruhe.
+    - Speaker: 11
+      Text: '*Du steckst den Frosch vorsichtig in deine Hosentasche*'
+  - Name: SKlettergeruestkind-1
+    Id:
+      Speaker: 111
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 111
+      Text: 'Ich habe doch gesagt, dass du mich in Ruhe lassen sollst. '
+    - Speaker: 111
+      Text: "*weil Mike sich aufregt, rutscht er fast vom Ger\xFCst ab*"
+    - Speaker: 11
+      Text: Das sah lustig aus. Hihihi...
+  - Name: SKlettergeruestkind-2
+    Id:
+      Speaker: 111
+      State: 2
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: "*Du kletterst auch auf das Ger\xFCst*"
+    - Speaker: 111
+      Text: "*weil Mike sich aufregt, rutscht er fast vom Ger\xFCst ab*"
+    - Speaker: 11
+      Text: Das sah lustig aus. Hihihi...
+  - Name: SHortnerin-1
+    Id:
+      Speaker: 208
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 208
+      Text: "Kinder, streitet euch nicht. Ihr k\xF6nnt doch beide gleichzeitig auf
+        dem Kletterger\xFCst spielen."
+  - Name: SKlettergeruestkind-3
+    Id:
+      Speaker: 111
+      State: 3
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: "*Da Mike Frau Meier auf euch angesetzt hat, schupst du ihn vom Kletterger\xFCst*"
+  - Name: SHortnerin-2
+    Id:
+      Speaker: 208
+      State: 2
+    DialogSpeakerData:
+    - Speaker: 208
+      Text: Gonzalita, wie ist das passiert?
+    - Speaker: 11
+      Text: Ich glaube, Mike ist abgerutscht und deswegen herunter gefallen.
+  - Name: SLehrerin-0
+    Id:
+      Speaker: 209
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 209
+      Text: "Hallo Kinder, heute reden wir \xFCber die Abwehrf\xE4higkeiten von Tieren,
+        die in unserer N\xE4he leben."
+    - Speaker: 209
+      Text: Dazu habe ich euch ein Stinktier mitgebracht.
+    - Speaker: 209
+      Text: "Frau Apfel stellt weitere F\xE4higkeiten des Stinktieres vor und wie
+        es seine Feinde mit einem Gestank abwehren kann."
+    - Speaker: 209
+      Text: "Jetzt k\xF6nnt ihr alle mal nach vorne kommen und euch das Stinktier
+        aus der N\xE4he ansehen."
+  - Name: SKaefig-0
+    Id:
+      Speaker: 308
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 209
+      Text: "Nein Gonzalita, den K\xE4fig \xF6ffnen wir nicht. Geh bitte zur\xFCck
+        auf deinen Platz."
+  - Name: SKaefig-1
+    Id:
+      Speaker: 308
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: "*du machst den K\xE4fig auf und l\xE4sst das Stinktier frei*"
+    - Speaker: 308
+      Text: '*das Stinktier versetzt die Klasse in Angst und spritzt die Lehrerin
+        an*'
+  - Name: SRanzen-0
+    Id:
+      Speaker: 309
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 11
+      Text: "*du l\xE4sst den Frosch aus deiner Tasche frei und er h\xFCpft aufgeregt
+        durch den Klassenraum*"

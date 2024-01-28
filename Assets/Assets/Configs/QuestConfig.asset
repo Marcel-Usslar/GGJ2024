@@ -39,3 +39,7 @@ MonoBehaviour:
     QuestName: Kaugummi entsorgen
     Speaker: 109
     QuestDescription: Entsorge den Kaugummi, den du von Louis bekommen hast.
+  - Type: 7
+    QuestName: Klettern ist Profisache
+    Speaker: 111
+    QuestDescription: "Schupse Mike vom Kletterger\xFCst."
