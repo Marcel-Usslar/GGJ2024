@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogConfig
   m_EditorClassIdentifier: 
   _dialogData:
-  - Name: Child01-0
+  - Name: Baby1-0
     Id:
       Speaker: 101
       State: 0
@@ -26,14 +26,14 @@ MonoBehaviour:
       Text: Pfffff
     - Speaker: 1
       Text: Auch egal. Her mit deinem Schnuller!
-  - Name: Child01-1
+  - Name: Baby1-1
     Id:
       Speaker: 101
       State: 1
     DialogSpeakerData:
     - Speaker: 101
       Text: "W\xE4h\xE4h\xE4..."
-  - Name: Child02-0
+  - Name: Baby2-0
     Id:
       Speaker: 102
       State: 0
@@ -46,14 +46,14 @@ MonoBehaviour:
       Text: "W\xE4\xE4hhh *schnief*"
     - Speaker: 1
       Text: Jetzt heul nicht, es ist nur ein Schnuller.
-  - Name: Child02-1
+  - Name: Baby2-1
     Id:
       Speaker: 102
       State: 1
     DialogSpeakerData:
     - Speaker: 102
       Text: '*Heul*'
-  - Name: Child03-0
+  - Name: Schnullerkoenig-0
     Id:
       Speaker: 103
       State: 0
@@ -68,21 +68,21 @@ MonoBehaviour:
     - Speaker: 103
       Text: Aber wenn du meinst, dass du es besser kannst, besorg mir doch noch zwei
         weitere von den Kindern aus der vierten Etage.
-  - Name: Child03-1
+  - Name: Schnullerkoenig-1
     Id:
       Speaker: 103
       State: 1
     DialogSpeakerData:
     - Speaker: 103
       Text: "Na, hast du Angst vor den Kleinen mit ihren scharfen Z\xE4hnchen?"
-  - Name: Child03-2
+  - Name: Schnullerkoenig-2
     Id:
       Speaker: 103
       State: 2
     DialogSpeakerData:
     - Speaker: 103
       Text: Du hast es echt drauf. Jetzt sieht meine Kette wirklich besser aus.
-  - Name: Child04-0
+  - Name: GummibaerchenJunge-0
     Id:
       Speaker: 104
       State: 0
@@ -98,28 +98,28 @@ MonoBehaviour:
         gibt. Aber heute nicht."
     - Speaker: 104
       Text: Dabei will ich sie UNBEDINGT haben.
-  - Name: Child04-1
+  - Name: GummibaerchenJunge-1
     Id:
       Speaker: 104
       State: 1
     DialogSpeakerData:
     - Speaker: 104
       Text: "Was f\xFCr ein bl\xF6der Tag."
-  - Name: Child04-2
+  - Name: GummibaerchenJunge-2
     Id:
       Speaker: 104
       State: 2
     DialogSpeakerData:
     - Speaker: 104
       Text: Wow, DANKE. Du bist der Allerbeste.
-  - Name: Child04-3
+  - Name: GummibaerchenJunge-3
     Id:
       Speaker: 104
       State: 3
     DialogSpeakerData:
     - Speaker: 104
       Text: HEY! DU bist ja voll gemein!
-  - Name: Child05-0
+  - Name: HandstandMaedchen-0
     Id:
       Speaker: 105
       State: 0
@@ -129,14 +129,14 @@ MonoBehaviour:
         er einen Handstand machen kann."
     - Speaker: 105
       Text: Jetzt kann ich das auch!
-  - Name: Child05-1
+  - Name: HandstandMaedchen-1
     Id:
       Speaker: 105
       State: 1
     DialogSpeakerData:
     - Speaker: 105
       Text: Ahhh... *Heul*
-  - Name: Child05-2
+  - Name: HandstandMaedchen-2
     Id:
       Speaker: 105
       State: 2
@@ -144,7 +144,7 @@ MonoBehaviour:
     - Speaker: 1
       Text: Hoppla, das war aber ungeschickt von mir. Ist ja gut, du musst nicht
         weinen.
-  - Name: Adult01-0
+  - Name: Mama-0
     Id:
       Speaker: 201
       State: 0
@@ -154,21 +154,21 @@ MonoBehaviour:
     - Speaker: 201
       Text: "Papa holt dich heute Nachmittag um 16 Uhr wieder ab. Sei sch\xF6n lieb
         und h\xF6r auf die Erzieher."
-  - Name: Adult03-0
+  - Name: Papa-0
     Id:
       Speaker: 203
       State: 0
     DialogSpeakerData:
     - Speaker: 202
       Text: Hallo mein Schatz, jetzt geht's nach Hause. Warst du denn auch lieb?
-  - Name: Adult02-0
+  - Name: Betreuerin1-0
     Id:
       Speaker: 202
       State: 0
     DialogSpeakerData:
     - Speaker: 202
       Text: "Heute ist so ein sch\xF6ner Tag, um mit den anderen zu spielen."
-  - Name: Adult02-1
+  - Name: Betreuerin1-1
     Id:
       Speaker: 202
       State: 1
@@ -177,7 +177,7 @@ MonoBehaviour:
       Text: Angelika, Flora ist beim Handstand hingefallen und hat sich wehgetan.
     - Speaker: 202
       Text: "Ach du liebe G\xFCte, gut dass du mir das gesagt hast."
-  - Name: Adult04-0
+  - Name: Betreuer1-0
     Id:
       Speaker: 204
       State: 0
@@ -186,14 +186,14 @@ MonoBehaviour:
       Text: Puh, ich bin gerade fertig geworden die Wand sauber zu machen.
     - Speaker: 204
       Text: Standig malt hier jemand mit einem Stift dran herum.
-  - Name: Adult04-1
+  - Name: Betreuer1-1
     Id:
       Speaker: 204
       State: 1
     DialogSpeakerData:
     - Speaker: 204
       Text: "STOP! Ich wei\xDF, dass ihr gerne malt, aber NICHT auf diese Wand!"
-  - Name: Adult04-2
+  - Name: Betreuer1-2
     Id:
       Speaker: 204
       State: 2
@@ -201,7 +201,7 @@ MonoBehaviour:
     - Speaker: 204
       Text: "Wenn du das nicht SOFORT sein l\xE4sst, muss ich sp\xE4ter mit deinen
         Eltern reden!"
-  - Name: Adult02-2
+  - Name: Betreuerin1-2
     Id:
       Speaker: 202
       State: 2
@@ -209,7 +209,7 @@ MonoBehaviour:
     - Speaker: 202
       Text: Das Bad? Na das ist im Erdgeschoss! Musst du mal auf die Toilette? Dann
         beeil dich besser!
-  - Name: Adult02-3
+  - Name: Betreuerin1-3
     Id:
       Speaker: 202
       State: 3
@@ -217,21 +217,21 @@ MonoBehaviour:
     - Speaker: 202
       Text: "Hast du nicht was vergessen? Haben dir deine Eltern nicht beigebracht,
         dass man sich nach der Toilette die H\xE4nde w\xE4scht?"
-  - Name: Adult02-4
+  - Name: Betreuerin1-4
     Id:
       Speaker: 202
       State: 4
     DialogSpeakerData:
     - Speaker: 202
       Text: Lass das Wasser bitte nicht zu lange laufen, ja?
-  - Name: Adult02-5
+  - Name: Betreuerin1-5
     Id:
       Speaker: 202
       State: 5
     DialogSpeakerData:
     - Speaker: 202
       Text: Habe ich nicht gesagt, dass du das Wasser nicht laufen lassen sollst?
-  - Name: Adult05-0
+  - Name: Direktorin-0
     Id:
       Speaker: 205
       State: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
     - Speaker: 205
       Text: "Aber was solls. Wo du schon mal hier bist: w\xFCrdest du bitte mal Malice
         aus Etage 4 zu mir schicken? Und danach sofort wieder ab in deine Gruppe!"
-  - Name: Adult05-1
+  - Name: Direktorin-1
     Id:
       Speaker: 205
       State: 1
@@ -250,7 +250,7 @@ MonoBehaviour:
     - Speaker: 205
       Text: "Dieser inkompetente Herr M\xFCller. St\xE4ndig setzt er den Keller unter
         Wasser und ich muss einen g\xFCnstigen Installateur auftreiben."
-  - Name: Adult02-6
+  - Name: Betreuerin1-6
     Id:
       Speaker: 202
       State: 6
@@ -258,14 +258,14 @@ MonoBehaviour:
     - Speaker: 202
       Text: "Nanana, du wei\xDFt doch, dass du nicht auf die Schr\xE4nke klettern
         darfst."
-  - Name: Adult06-0
+  - Name: Betreuerin2-0
     Id:
       Speaker: 206
       State: 0
     DialogSpeakerData:
     - Speaker: 206
       Text: Na sowas, was machst du denn hier? Das ist doch nicht deine Gruppe.
-  - Name: Adult06-1
+  - Name: Betreuerin2-1
     Id:
       Speaker: 206
       State: 1
@@ -277,7 +277,7 @@ MonoBehaviour:
     - Speaker: 206
       Text: Oh, na wenn das so ist. Danke dir, dass du Bescheid sagst. Nun aber ab
         mit dir in deine Gruppe!
-  - Name: Adult02-7
+  - Name: Betreuerin1-7
     Id:
       Speaker: 202
       State: 7
@@ -285,14 +285,14 @@ MonoBehaviour:
     - Speaker: 202
       Text: "Ach nein... st\xE4ndig ist irgendwas anderes aufzur\xE4umen. H\xE4tte
         ich doch nur die Stelle in der Grundschule angenommen."
-  - Name: Adult02-8
+  - Name: Betreuerin1-8
     Id:
       Speaker: 202
       State: 8
     DialogSpeakerData:
     - Speaker: 202
       Text: "So meine lieben Kinder. Es wird Zeit f\xFCr euren Mittagsschlaf."
-  - Name: Adult02-9
+  - Name: Betreuerin1-9
     Id:
       Speaker: 202
       State: 9
@@ -300,17 +300,68 @@ MonoBehaviour:
     - Speaker: 202
       Text: "Kannst du etwa nicht schlafen? Leg dich trotzdem ein wenig hin und ruh
         dich aus. Sonst st\xF6rst du die anderen."
-  - Name: Adult02-10
+  - Name: Betreuerin1-10
     Id:
       Speaker: 202
       State: 10
     DialogSpeakerData:
     - Speaker: 202
       Text: Aufstehen, liebe Kinder. Es ist schon 15 Uhr!
-  - Name: Adult02-11
+  - Name: Betreuerin1-11
     Id:
       Speaker: 202
       State: 11
     DialogSpeakerData:
     - Speaker: 202
       Text: Gonzalita! Dein Vater ist da!
+  - Name: MalenMaedchen-0
+    Id:
+      Speaker: 106
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 1
+      Text: "Das Bild sieht sch\xF6n aus, Tiana."
+    - Speaker: 106
+      Text: "Danke, ich mag es auch. Aber ich w\xFCrde es gern gr\xF6\xDFer malen.
+        Dann w\xE4re es viel sch\xF6ner."
+  - Name: MalenMaedchen-1
+    Id:
+      Speaker: 106
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 1
+      Text: WAHNSINN, das sieht richtig KACKE aus! Aber Mumm hast du auf jeden Fall.
+    - Speaker: 106
+      Text: "Danke, ich mag es auch. Aber ich w\xFCrde es gern gr\xF6\xDFer malen.
+        Dann w\xE4re es viel sch\xF6ner."
+  - Name: SuessesJunge-0
+    Id:
+      Speaker: 107
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 107
+      Text: "Immer wenn ich S\xFC\xDFigkeiten esse, habe ich ganz viel Energie und
+        laufe viel schneller."
+  - Name: SchnuersenkelJunge-0
+    Id:
+      Speaker: 108
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 108
+      Text: "Wusstest du, dass manche Kinder Schuhe mit SChn\xFCrsenkeln und machne
+        Schuhe mit Klettverschluss tragen?"
+    - Speaker: 108
+      Text: "Meine Oma sagt, dass Klettverschluss was f\xFCr bl\xF6de Kinder ist,
+        damit sie nicht \xFCber ihre Schn\xFCrsenkel stolpern."
+    - Speaker: 108
+      Text: "Darum habe ICH nacht\xFCrlich keinen Klettverschluss."
+  - Name: SchnuersenkelJunge-1
+    Id:
+      Speaker: 108
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 108
+      Text: "Welche Schuhe meine sind? Du bist wohl neudisch, was? Sie stehen nat\xFCrlich
+        im Treppenhaus direkt vor dem Spielzimmer."
+    - Speaker: 108
+      Text: ' Es sind die roten "Paleos" mit dem Dino-Motiv.'
