@@ -10,12 +10,17 @@ namespace Game.LevelTimer
 
         private void Start()
         {
-            LevelTimerService.Instance.CurrentTime.RegisterCallback(UpdateCurrentTime);
+            LevelTimerModel.Instance.CurrentTime.RegisterCallback(UpdateCurrentTime);
         }
 
         private void OnDestroy()
         {
-            LevelTimerService.Instance.CurrentTime.UnregisterCallback(UpdateCurrentTime);
+            LevelTimerModel.Instance.CurrentTime.UnregisterCallback(UpdateCurrentTime);
+        }
+
+        private void Update()
+        {
+            LevelTimerModel.Instance.AddDeltaTime(Time.deltaTime);
         }
 
         private void UpdateCurrentTime(DateTime time)

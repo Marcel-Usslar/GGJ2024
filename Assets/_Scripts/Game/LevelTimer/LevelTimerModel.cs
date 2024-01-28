@@ -1,36 +1,39 @@
 using System;
 using Game.GameState;
+using Game.LevelManagement;
 using Game.Utility;
-using UnityEngine;
 using Utility;
 using Utility.Singletons;
 
 namespace Game.LevelTimer
 {
-    public class LevelTimerService : SingletonMonoBehaviour<LevelTimerService>
+    public class LevelTimerModel : SingletonModel<LevelTimerModel>
     {
+        private readonly DateTime _startTime;
         private float _timeCountSinceLevelStart;
-        private DateTime _startTime;
         private float _roundedPassedTime;
 
         public ReactiveProperty<DateTime> CurrentTime { get; } = new();
         public CallbackHandler OnEndOfDayReached { get; } = new();
 
-        protected override void OnInitialize()
+        public LevelTimerModel()
         {
             var config = ConfigSingletonInstaller.Instance.LevelTimerConfig;
             _startTime = DateTime.MinValue.AddHours(config.GameTimeStartHours);
             CurrentTime.Value = _startTime;
+
+            LevelLoadingModel.Instance.OnLevelLoaded
+                .RegisterCallback(() => CurrentTime.Value = _startTime);
         }
 
-        private void Update()
+        public void AddDeltaTime(float deltaTime)
         {
             var totalRealTime = ConfigSingletonInstaller.Instance.LevelTimerConfig.TotalLevelRealTimeSeconds;
 
             if (GameStateModel.Instance.IsPaused.Value || _timeCountSinceLevelStart >= totalRealTime)
                 return;
 
-            _timeCountSinceLevelStart += Time.deltaTime;
+            _timeCountSinceLevelStart += deltaTime;
 
             var overTotalTime = _timeCountSinceLevelStart > totalRealTime;
 

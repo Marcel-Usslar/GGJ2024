@@ -1,3 +1,4 @@
+using Game.GameState;
 using Game.Speaker;
 using Game.Utility;
 using Utility;
@@ -19,6 +20,7 @@ namespace Game.Dialog
             _dialogIndex = 0;
 
             OnDialog.Trigger(new DialogPageDto(_dialogId, _dialogIndex));
+            GameStateModel.Instance.IsPaused.Value = true;
         }
 
         public void Continue()
@@ -27,6 +29,7 @@ namespace Game.Dialog
             if (!dialogConfig.HasNextDialog(_dialogId, _dialogIndex))
             {
                 OnDialogCompleted.Trigger();
+                GameStateModel.Instance.IsPaused.Value = false;
                 return;
             }
 

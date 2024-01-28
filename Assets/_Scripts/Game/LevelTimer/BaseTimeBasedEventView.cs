@@ -16,14 +16,14 @@ namespace Game.LevelTimer
 
         private void Start()
         {
-            LevelTimerService.Instance.CurrentTime.RegisterCallback(TryTriggerEvent);
+            LevelTimerModel.Instance.CurrentTime.RegisterCallback(TryTriggerEvent);
 
             OnStart();
         }
 
         private void OnDestroy()
         {
-            LevelTimerService.Instance.CurrentTime.UnregisterCallback(TryTriggerEvent);
+            LevelTimerModel.Instance.CurrentTime.UnregisterCallback(TryTriggerEvent);
 
             OnFinalize();
         }

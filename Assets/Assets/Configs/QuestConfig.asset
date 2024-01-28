@@ -29,5 +29,5 @@ MonoBehaviour:
     QuestDescription: Hey, Timmy -> hol mir aus der Lobby meinen Schnuller!
   - Type: 3
     QuestName: Lobby
-    Speaker: 104
-    QuestDescription: Hey, Timmy -> hol mir aus der Lobby meinen Teller!
+    Speaker: 201
+    QuestDescription: Get something from the lobby!
