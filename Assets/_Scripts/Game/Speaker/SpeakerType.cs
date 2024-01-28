@@ -24,5 +24,6 @@ namespace Game.Speaker
         Stift = 302,
         Wand = 303,
         Schuhschrank = 304,
+        Waschbecken = 305,
     }
 }

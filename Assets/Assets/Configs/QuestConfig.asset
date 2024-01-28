@@ -16,18 +16,22 @@ MonoBehaviour:
   _totalQuests: 4
   _questData:
   - Type: 0
-    QuestName: Wall Drawing
-    Speaker: 101
-    QuestDescription: Draw on the wall!
+    QuestName: "Malen im gro\xDFen Stil"
+    Speaker: 106
+    QuestDescription: "Male Tianas Bild in gro\xDF an die Wand."
   - Type: 1
-    QuestName: Playground
-    Speaker: 102
-    QuestDescription: 
+    QuestName: "S\xFC\xDFes oder Saures"
+    Speaker: 104
+    QuestDescription: "Hole f\xFCr Marvin die Gummib\xE4rchen vom Schrank."
   - Type: 2
-    QuestName: Teacher Lobby
+    QuestName: "Kettenverl\xE4ngerung"
     Speaker: 103
-    QuestDescription: Hey, Timmy -> hol mir aus der Lobby meinen Schnuller!
+    QuestDescription: "Hole f\xFCr Christian zwei weitere Schnuller aus dem 4. Stock."
   - Type: 3
-    QuestName: Lobby
-    Speaker: 201
-    QuestDescription: Get something from the lobby!
+    QuestName: "H\xFCpfen oder Stolpern"
+    Speaker: 108
+    QuestDescription: "Binde die Schn\xFCrsenkel von Silas zusammen."
+  - Type: 3
+    QuestName: Sinflut
+    Speaker: 305
+    QuestDescription: Setze das Badezimmer unter Wasser.
