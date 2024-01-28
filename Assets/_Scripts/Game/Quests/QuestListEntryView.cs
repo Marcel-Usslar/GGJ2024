@@ -11,14 +11,14 @@ namespace Game.Quests
         [SerializeField] private TextMeshProUGUI _name;
         [SerializeField] private TextMeshProUGUI _description;
 
-        public void Setup(string quest)
+        public void Setup(QuestType quest)
         {
             var questConfig = ConfigSingletonInstaller.Instance.QuestConfig;
             var speakerConfig = ConfigSingletonInstaller.Instance.SpeakerConfig;
             var speaker = questConfig.GetQuestSpeaker(quest);
 
             _speakerIcon.sprite = speakerConfig.GetSpeakerIcon(speaker);
-            _name.text = quest;
+            _name.text = questConfig.GetQuestName(quest);
             _description.text = questConfig.GetQuestDescription(quest);
         }
     }

@@ -12,6 +12,7 @@ namespace Game.Quests.Config
         [Serializable]
         private class QuestMapping
         {
+            public QuestType Type;
             public string QuestName;
             public SpeakerType Speaker;
             public string QuestDescription;
@@ -29,19 +30,24 @@ namespace Game.Quests.Config
             return _questData.Any(mapping => mapping.Speaker == speaker);
         }
 
-        public string GetQuestName(SpeakerType speaker)
+        public QuestType GetQuestType(SpeakerType speaker)
         {
-            return _questData.First(mapping => mapping.Speaker == speaker).QuestName;
+            return _questData.First(mapping => mapping.Speaker == speaker).Type;
         }
 
-        public string GetQuestDescription(string questName)
+        public string GetQuestName(QuestType type)
         {
-            return _questData.First(mapping => mapping.QuestName == questName).QuestDescription;
+            return _questData.First(mapping => mapping.Type == type).QuestName;
         }
 
-        public SpeakerType GetQuestSpeaker(string questName)
+        public string GetQuestDescription(QuestType type)
         {
-            return _questData.First(mapping => mapping.QuestName == questName).Speaker;
+            return _questData.First(mapping => mapping.Type == type).QuestDescription;
+        }
+
+        public SpeakerType GetQuestSpeaker(QuestType type)
+        {
+            return _questData.First(mapping => mapping.Type == type).Speaker;
         }
     }
 }

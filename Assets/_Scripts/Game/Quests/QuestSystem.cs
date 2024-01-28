@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Game.Speaker;
 using Game.Utility;
+using UnityEngine;
 using Utility;
 using Utility.Singletons;
 
@@ -8,14 +9,14 @@ namespace Game.Quests
 {
     public class QuestSystem : SingletonModel<QuestSystem>
     {
-        private readonly List<string> _receivedQuests = new();
-        private readonly List<string> _completedQuests = new();
+        private readonly List<QuestType> _receivedQuests = new();
+        private readonly List<QuestType> _completedQuests = new();
 
-        public IEnumerable<string> ReceivedQuests => _receivedQuests;
-        public IEnumerable<string> CompletedQuests => _completedQuests;
+        public IEnumerable<QuestType> ReceivedQuests => _receivedQuests;
+        public IEnumerable<QuestType> CompletedQuests => _completedQuests;
 
-        public CallbackHandler<string> OnQuestAccepted { get; } = new();
-        public CallbackHandler<string> OnQuestCompleted { get; } = new();
+        public CallbackHandler<QuestType> OnQuestAccepted { get; } = new();
+        public CallbackHandler<QuestType> OnQuestCompleted { get; } = new();
 
         public bool HasQuest(SpeakerType speaker)
         {
@@ -24,24 +25,32 @@ namespace Game.Quests
             if (!questConfig.HasQuest(speaker))
                 return false;
 
-            var questName = questConfig.GetQuestName(speaker);
-            return !_receivedQuests.Contains(questName) && !_completedQuests.Contains(questName);
+            var quest = questConfig.GetQuestType(speaker);
+            return !_receivedQuests.Contains(quest) && !_completedQuests.Contains(quest);
         }
 
-        public void AcceptQuest(SpeakerType speaker)
+        public void AcceptQuest(QuestType quest)
         {
-            var questConfig = ConfigSingletonInstaller.Instance.QuestConfig;
-            var questName = questConfig.GetQuestName(speaker);
+            if (_receivedQuests.Contains(quest))
+            {
+                Debug.LogError($"Quest {quest} was already started!");
+                return;
+            }
+            if (_completedQuests.Contains(quest))
+            {
+                Debug.LogError($"Quest {quest} was already completed!");
+                return;
+            }
 
-            _receivedQuests.Add(questName);
-            OnQuestAccepted.Trigger(questName);
+            _receivedQuests.Add(quest);
+            OnQuestAccepted.Trigger(quest);
         }
 
-        public void CompleteQuest(string quest)
+        public void CompleteQuest(QuestType quest)
         {
             if (!_receivedQuests.Contains(quest))
             {
-                //Log quest not received
+                Debug.LogError($"Quest {quest} was never started!");
                 return;
             }
 

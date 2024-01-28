@@ -7,20 +7,18 @@ namespace Game.Dialog
 {
     public class DialogSystem : SingletonModel<DialogSystem>
     {
-        public CallbackHandler<DialogDto> OnDialog { get; } = new();
+        public CallbackHandler<DialogPageDto> OnDialog { get; } = new();
         public CallbackHandler OnDialogCompleted { get; } = new();
 
-        private int _dialogId;
+        private DialogId _dialogId;
         private int _dialogIndex;
 
-        public void TriggerDialog(SpeakerType speaker, int state)
+        public void TriggerDialog(DialogId id)
         {
-            var dialogConfig = ConfigSingletonInstaller.Instance.CharacterDialogConfig;
-
-            _dialogId = dialogConfig.GetDialogId(speaker, state);
+            _dialogId = id;
             _dialogIndex = 0;
 
-            OnDialog.Trigger(new DialogDto(_dialogId, _dialogIndex));
+            OnDialog.Trigger(new DialogPageDto(_dialogId, _dialogIndex));
         }
 
         public void Continue()
@@ -33,7 +31,7 @@ namespace Game.Dialog
             }
 
             _dialogIndex++;
-            OnDialog.Trigger(new DialogDto(_dialogId, _dialogIndex));
+            OnDialog.Trigger(new DialogPageDto(_dialogId, _dialogIndex));
         }
     }
 }

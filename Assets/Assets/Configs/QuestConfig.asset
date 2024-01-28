@@ -15,15 +15,19 @@ MonoBehaviour:
   _prefab: {fileID: 8054174826284151573, guid: 3a760f1e61170be4aa83572ff5261b81, type: 3}
   _totalQuests: 4
   _questData:
-  - QuestName: Wall-Drawing
+  - Type: 0
+    QuestName: Wall Drawing
     Speaker: 101
     QuestDescription: Draw on the wall!
-  - QuestName: Playground
+  - Type: 1
+    QuestName: Playground
     Speaker: 102
     QuestDescription: 
-  - QuestName: Teacher-Lobby
+  - Type: 2
+    QuestName: Teacher Lobby
     Speaker: 103
     QuestDescription: Hey, Timmy -> hol mir aus der Lobby meinen Schnuller!
-  - QuestName: Lobby
+  - Type: 3
+    QuestName: Lobby
     Speaker: 104
     QuestDescription: Hey, Timmy -> hol mir aus der Lobby meinen Teller!

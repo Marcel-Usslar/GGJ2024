@@ -11,7 +11,9 @@ namespace Game.Dialog.Config
         [Serializable]
         private class DialogMapping
         {
-            public int DialogID;
+            //Editor only for better readability
+            [HideInInspector] public string Name;
+            public DialogId Id;
             public List<DialogSpeakerMapping> DialogSpeakerData;
         }
         [Serializable]
@@ -23,24 +25,29 @@ namespace Game.Dialog.Config
 
         [SerializeField] private List<DialogMapping> _dialogData;
 
-        public bool HasNextDialog(int dialogId, int index)
+        public bool HasNextDialog(DialogId dialogId, int index)
         {
-            return _dialogData.First(mapping => mapping.DialogID == dialogId).DialogSpeakerData.Count > index + 1;
+            return _dialogData.First(mapping => mapping.Id == dialogId).DialogSpeakerData.Count > index + 1;
         }
 
-        public SpeakerType GetDialogSpeaker(int dialogId, int index)
+        public SpeakerType GetDialogSpeaker(DialogId dialogId, int index)
         {
             return GetDialogSpeakerMapping(dialogId, index).Speaker;
         }
 
-        public string GetDialogText(int dialogId, int index)
+        public string GetDialogText(DialogId dialogId, int index)
         {
             return GetDialogSpeakerMapping(dialogId, index).Text;
         }
 
-        private DialogSpeakerMapping GetDialogSpeakerMapping(int dialogId, int index)
+        private DialogSpeakerMapping GetDialogSpeakerMapping(DialogId dialogId, int index)
         {
-            return _dialogData.First(mapping => mapping.DialogID == dialogId).DialogSpeakerData[index];
+            return _dialogData.First(mapping => mapping.Id == dialogId).DialogSpeakerData[index];
+        }
+
+        private void OnValidate()
+        {
+            _dialogData.ForEach(mapping => mapping.Name = $"{mapping.Id.Speaker}-{mapping.Id.State}");
         }
     }
 }

@@ -44,7 +44,7 @@ namespace Game.Quests
             QuestSystem.Instance.ReceivedQuests.ForEach(SpawnQuestEntry);
         }
 
-        private void SpawnQuestEntry(string quest)
+        private void SpawnQuestEntry(QuestType quest)
         {
             var entry = PooledView<QuestListEntryView>.Instance.Spawn(_questContent);
             _questListEntries.Add(entry);

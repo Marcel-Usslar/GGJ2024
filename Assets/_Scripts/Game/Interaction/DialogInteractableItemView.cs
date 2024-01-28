@@ -22,12 +22,14 @@ namespace Game.Interaction
         private void AcceptQuest()
         {
             TriggerDialog();
-            QuestSystem.Instance.AcceptQuest(_speaker);
+            var questConfig = ConfigSingletonInstaller.Instance.QuestConfig;
+            QuestSystem.Instance.AcceptQuest(questConfig.GetQuestType(_speaker));
         }
 
         private void TriggerDialog()
         {
-            DialogSystem.Instance.TriggerDialog(_speaker, _dialogStateView.State);
+            var id = new DialogId(_speaker, _dialogStateView.State);
+            DialogSystem.Instance.TriggerDialog(id);
         }
     }
 }

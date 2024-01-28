@@ -33,16 +33,16 @@ namespace Game.Dialog
             _continueButton.UnregisterClickHandler(_ => DialogSystem.Instance.Continue());
         }
 
-        private void ShowDialog(DialogDto dto)
+        private void ShowDialog(DialogPageDto dto)
         {
             var dialogConfig = ConfigSingletonInstaller.Instance.DialogConfig;
             var speakerConfig = ConfigSingletonInstaller.Instance.SpeakerConfig;
 
-            var speakerType = dialogConfig.GetDialogSpeaker(dto.DialogId, dto.Index);
+            var speakerType = dialogConfig.GetDialogSpeaker(dto.Id, dto.Index);
             _speakerIcon.sprite = speakerConfig.GetSpeakerIcon(speakerType);
             _speakerName.text = speakerConfig.GetSpeakerName(speakerType);
-            _dialogText.text = dialogConfig.GetDialogText(dto.DialogId, dto.Index);
-            _continueIcon.SetActive(dialogConfig.HasNextDialog(dto.DialogId, dto.Index));
+            _dialogText.text = dialogConfig.GetDialogText(dto.Id, dto.Index);
+            _continueIcon.SetActive(dialogConfig.HasNextDialog(dto.Id, dto.Index));
 
             Show();
         }

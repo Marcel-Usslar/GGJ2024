@@ -5,7 +5,7 @@ namespace Game.Dialog
 {
     public class QuestDialogStateView : DialogStateView
     {
-        [SerializeField] private string _questName;
+        [SerializeField] private QuestType _questType;
 
         private int _state;
 
@@ -23,9 +23,9 @@ namespace Game.Dialog
             QuestSystem.Instance.OnQuestCompleted.UnregisterCallback(TryForwardingState);
         }
 
-        private void TryForwardingState(string questName)
+        private void TryForwardingState(QuestType questName)
         {
-            if (questName != _questName)
+            if (questName != _questType)
                 return;
 
             _state++;
