@@ -23,25 +23,294 @@ MonoBehaviour:
     - Speaker: 1
       Text: Wie bitte?
     - Speaker: 101
-      Text: Das ist meine dritte Nachricht
+      Text: Pfffff
+    - Speaker: 1
+      Text: Auch egal. Her mit deinem Schnuller!
   - Name: Child01-1
     Id:
       Speaker: 101
       State: 1
     DialogSpeakerData:
     - Speaker: 101
-      Text: Warum bist du noch hier?
-  - Name: Child01-2
+      Text: "W\xE4h\xE4h\xE4..."
+  - Name: Child02-0
     Id:
-      Speaker: 101
+      Speaker: 102
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 102
+      Text: Nanana... lulu
+    - Speaker: 1
+      Text: Gibt mir deinen Schnuller!
+    - Speaker: 102
+      Text: "W\xE4\xE4hhh *schnief*"
+    - Speaker: 1
+      Text: Jetzt heul nicht, es ist nur ein Schnuller.
+  - Name: Child02-1
+    Id:
+      Speaker: 102
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 102
+      Text: '*Heul*'
+  - Name: Child03-0
+    Id:
+      Speaker: 103
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 103
+      Text: Hallo Gonzalita. WIe findest du meine Kette?
+    - Speaker: 1
+      Text: Sie sieht gut aus, aber etwas kurz.
+    - Speaker: 103
+      Text: Kurz?! Ich habe alle drei Schnuller kleinen Loosern geklaut, das war
+        gar nicht so einfach. Die schreien gleich los.
+    - Speaker: 103
+      Text: Aber wenn du meinst, dass du es besser kannst, besorg mir doch noch zwei
+        weitere von den Kindern aus der vierten Etage.
+  - Name: Child03-1
+    Id:
+      Speaker: 103
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 103
+      Text: "Na, hast du Angst vor den Kleinen mit ihren scharfen Z\xE4hnchen?"
+  - Name: Child03-2
+    Id:
+      Speaker: 103
       State: 2
     DialogSpeakerData:
-    - Speaker: 101
-      Text: Dankeeee!?
-  - Name: Adult01-100
+    - Speaker: 103
+      Text: Du hast es echt drauf. Jetzt sieht meine Kette wirklich besser aus.
+  - Name: Child04-0
+    Id:
+      Speaker: 104
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 1
+      Text: Hey Marvin, warum bist du so schlecht gelaunt?
+    - Speaker: 104
+      Text: "Ich habe SOOO Lust auf Gummib\xE4rchen."
+    - Speaker: 1
+      Text: Hast du Angelika schon gefragt, ob sie dir welche gibt?
+    - Speaker: 104
+      Text: "Ja, aber sie hat gesagt, dass es Gummib\xE4rchen nur an besonderen Tagen
+        gibt. Aber heute nicht."
+    - Speaker: 104
+      Text: Dabei will ich sie UNBEDINGT haben.
+  - Name: Child04-1
+    Id:
+      Speaker: 104
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 104
+      Text: "Was f\xFCr ein bl\xF6der Tag."
+  - Name: Child04-2
+    Id:
+      Speaker: 104
+      State: 2
+    DialogSpeakerData:
+    - Speaker: 104
+      Text: Wow, DANKE. Du bist der Allerbeste.
+  - Name: Child04-3
+    Id:
+      Speaker: 104
+      State: 3
+    DialogSpeakerData:
+    - Speaker: 104
+      Text: HEY! DU bist ja voll gemein!
+  - Name: Child05-0
+    Id:
+      Speaker: 105
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 105
+      Text: "Mein gro\xDFer Bruder ist im Turnverein und gibt immer damit an, dass
+        er einen Handstand machen kann."
+    - Speaker: 105
+      Text: Jetzt kann ich das auch!
+  - Name: Child05-1
+    Id:
+      Speaker: 105
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 105
+      Text: Ahhh... *Heul*
+  - Name: Child05-2
+    Id:
+      Speaker: 105
+      State: 2
+    DialogSpeakerData:
+    - Speaker: 1
+      Text: Hoppla, das war aber ungeschickt von mir. Ist ja gut, du musst nicht
+        weinen.
+  - Name: Adult01-0
     Id:
       Speaker: 201
-      State: 100
+      State: 0
     DialogSpeakerData:
     - Speaker: 201
-      Text: Time based QUEST?!
+      Text: "Na dann Gonzalita, da w\xE4ren wir. Viel Spa\xDF mit den anderen Kindern. "
+    - Speaker: 201
+      Text: "Papa holt dich heute Nachmittag um 16 Uhr wieder ab. Sei sch\xF6n lieb
+        und h\xF6r auf die Erzieher."
+  - Name: Adult03-0
+    Id:
+      Speaker: 203
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: Hallo mein Schatz, jetzt geht's nach Hause. Warst du denn auch lieb?
+  - Name: Adult02-0
+    Id:
+      Speaker: 202
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: "Heute ist so ein sch\xF6ner Tag, um mit den anderen zu spielen."
+  - Name: Adult02-1
+    Id:
+      Speaker: 202
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 2
+      Text: Angelika, Flora ist beim Handstand hingefallen und hat sich wehgetan.
+    - Speaker: 202
+      Text: "Ach du liebe G\xFCte, gut dass du mir das gesagt hast."
+  - Name: Adult04-0
+    Id:
+      Speaker: 204
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 204
+      Text: Puh, ich bin gerade fertig geworden die Wand sauber zu machen.
+    - Speaker: 204
+      Text: Standig malt hier jemand mit einem Stift dran herum.
+  - Name: Adult04-1
+    Id:
+      Speaker: 204
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 204
+      Text: "STOP! Ich wei\xDF, dass ihr gerne malt, aber NICHT auf diese Wand!"
+  - Name: Adult04-2
+    Id:
+      Speaker: 204
+      State: 2
+    DialogSpeakerData:
+    - Speaker: 204
+      Text: "Wenn du das nicht SOFORT sein l\xE4sst, muss ich sp\xE4ter mit deinen
+        Eltern reden!"
+  - Name: Adult02-2
+    Id:
+      Speaker: 202
+      State: 2
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: Das Bad? Na das ist im Erdgeschoss! Musst du mal auf die Toilette? Dann
+        beeil dich besser!
+  - Name: Adult02-3
+    Id:
+      Speaker: 202
+      State: 3
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: "Hast du nicht was vergessen? Haben dir deine Eltern nicht beigebracht,
+        dass man sich nach der Toilette die H\xE4nde w\xE4scht?"
+  - Name: Adult02-4
+    Id:
+      Speaker: 202
+      State: 4
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: Lass das Wasser bitte nicht zu lange laufen, ja?
+  - Name: Adult02-5
+    Id:
+      Speaker: 202
+      State: 5
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: Habe ich nicht gesagt, dass du das Wasser nicht laufen lassen sollst?
+  - Name: Adult05-0
+    Id:
+      Speaker: 205
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 205
+      Text: Ah, Gonzalita, was machst du denn hier? Solltest du nicht in deiner Gruppe
+        sein? Auf Angelika ist auch gar kein Verlass mehr...
+    - Speaker: 205
+      Text: "Aber was solls. Wo du schon mal hier bist: w\xFCrdest du bitte mal Malice
+        aus Etage 4 zu mir schicken? Und danach sofort wieder ab in deine Gruppe!"
+  - Name: Adult05-1
+    Id:
+      Speaker: 205
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 205
+      Text: "Dieser inkompetente Herr M\xFCller. St\xE4ndig setzt er den Keller unter
+        Wasser und ich muss einen g\xFCnstigen Installateur auftreiben."
+  - Name: Adult02-6
+    Id:
+      Speaker: 202
+      State: 6
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: "Nanana, du wei\xDFt doch, dass du nicht auf die Schr\xE4nke klettern
+        darfst."
+  - Name: Adult06-0
+    Id:
+      Speaker: 206
+      State: 0
+    DialogSpeakerData:
+    - Speaker: 206
+      Text: Na sowas, was machst du denn hier? Das ist doch nicht deine Gruppe.
+  - Name: Adult06-1
+    Id:
+      Speaker: 206
+      State: 1
+    DialogSpeakerData:
+    - Speaker: 206
+      Text: Du schon wieder?
+    - Speaker: 1
+      Text: Malice, ist soll dich ins Zimmer von Frau Rosenthal rufen.
+    - Speaker: 206
+      Text: Oh, na wenn das so ist. Danke dir, dass du Bescheid sagst. Nun aber ab
+        mit dir in deine Gruppe!
+  - Name: Adult02-7
+    Id:
+      Speaker: 202
+      State: 7
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: "Ach nein... st\xE4ndig ist irgendwas anderes aufzur\xE4umen. H\xE4tte
+        ich doch nur die Stelle in der Grundschule angenommen."
+  - Name: Adult02-8
+    Id:
+      Speaker: 202
+      State: 8
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: "So meine lieben Kinder. Es wird Zeit f\xFCr euren Mittagsschlaf."
+  - Name: Adult02-9
+    Id:
+      Speaker: 202
+      State: 9
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: "Kannst du etwa nicht schlafen? Leg dich trotzdem ein wenig hin und ruh
+        dich aus. Sonst st\xF6rst du die anderen."
+  - Name: Adult02-10
+    Id:
+      Speaker: 202
+      State: 10
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: Aufstehen, liebe Kinder. Es ist schon 15 Uhr!
+  - Name: Adult02-11
+    Id:
+      Speaker: 202
+      State: 11
+    DialogSpeakerData:
+    - Speaker: 202
+      Text: Gonzalita! Dein Vater ist da!
