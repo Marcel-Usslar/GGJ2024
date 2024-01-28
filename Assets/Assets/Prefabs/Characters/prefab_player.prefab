@@ -278,6 +278,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 150
+  _hitLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
   _rigidbody: {fileID: 3415342406173027521}
   _directionIndicator: {fileID: 5885829234108689910}
 --- !u!114 &1236574846577842803
