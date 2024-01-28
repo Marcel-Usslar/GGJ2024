@@ -31,7 +31,7 @@ MonoBehaviour:
     QuestName: "H\xFCpfen oder Stolpern"
     Speaker: 108
     QuestDescription: "Binde die Schn\xFCrsenkel von Silas zusammen."
-  - Type: 3
+  - Type: 4
     QuestName: Sinflut
     Speaker: 305
     QuestDescription: Setze das Badezimmer unter Wasser.

@@ -3,8 +3,9 @@ namespace Game.Quests
     public enum QuestType
     {
         WallDrawing = 0,
-        Playground = 1,
-        TeacherLobby = 2,
-        Lobby = 3,
+        Suesses = 1,
+        Schnuller = 2,
+        Schnuersenkel = 3,
+        Wasserflut = 4,
     }
 }
