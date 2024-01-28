@@ -43,3 +43,7 @@ MonoBehaviour:
     QuestName: Klettern ist Profisache
     Speaker: 111
     QuestDescription: "Schupse Mike vom Kletterger\xFCst."
+  - Type: 8
+    QuestName: "Aufregung durch D\xFCfte"
+    Speaker: 308
+    QuestDescription: Lasse das Stinktier im Klassenraum frei.
