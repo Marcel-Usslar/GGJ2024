@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CharacterDialogConfig
   m_EditorClassIdentifier: 
   _characterDialogData:
-  - Speaker: Test
+  - Speaker: 101
     DialogStateData:
     - State: 0
       DialogId: 1

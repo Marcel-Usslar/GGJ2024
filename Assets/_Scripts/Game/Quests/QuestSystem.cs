@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Game.Speaker;
 using Game.Utility;
 using Utility;
 using Utility.Singletons;
@@ -16,7 +17,7 @@ namespace Game.Quests
         public CallbackHandler<string> OnQuestAccepted { get; } = new();
         public CallbackHandler<string> OnQuestCompleted { get; } = new();
 
-        public bool HasQuest(string speaker)
+        public bool HasQuest(SpeakerType speaker)
         {
             var questConfig = ConfigSingletonInstaller.Instance.QuestConfig;
 
@@ -27,7 +28,7 @@ namespace Game.Quests
             return !_receivedQuests.Contains(questName) && !_completedQuests.Contains(questName);
         }
 
-        public void AcceptQuest(string speaker)
+        public void AcceptQuest(SpeakerType speaker)
         {
             var questConfig = ConfigSingletonInstaller.Instance.QuestConfig;
             var questName = questConfig.GetQuestName(speaker);

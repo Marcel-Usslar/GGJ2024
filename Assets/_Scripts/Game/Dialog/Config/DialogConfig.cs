@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Game.Speaker;
 using UnityEngine;
 
 namespace Game.Dialog.Config
@@ -16,7 +17,7 @@ namespace Game.Dialog.Config
         [Serializable]
         private class DialogSpeakerMapping
         {
-            public string Speaker;
+            public SpeakerType Speaker;
             [TextArea] public string Text;
         }
 
@@ -27,7 +28,7 @@ namespace Game.Dialog.Config
             return _dialogData.First(mapping => mapping.DialogID == dialogId).DialogSpeakerData.Count > index + 1;
         }
 
-        public string GetDialogSpeaker(int dialogId, int index)
+        public SpeakerType GetDialogSpeaker(int dialogId, int index)
         {
             return GetDialogSpeakerMapping(dialogId, index).Speaker;
         }

@@ -38,9 +38,9 @@ namespace Game.Dialog
             var dialogConfig = ConfigSingletonInstaller.Instance.DialogConfig;
             var speakerConfig = ConfigSingletonInstaller.Instance.SpeakerConfig;
 
-            var speakerName = dialogConfig.GetDialogSpeaker(dto.DialogId, dto.Index);
-            _speakerIcon.sprite = speakerConfig.GetSpeakerIcon(speakerName);
-            _speakerName.text = speakerName;
+            var speakerType = dialogConfig.GetDialogSpeaker(dto.DialogId, dto.Index);
+            _speakerIcon.sprite = speakerConfig.GetSpeakerIcon(speakerType);
+            _speakerName.text = speakerConfig.GetSpeakerName(speakerType);
             _dialogText.text = dialogConfig.GetDialogText(dto.DialogId, dto.Index);
             _continueIcon.SetActive(dialogConfig.HasNextDialog(dto.DialogId, dto.Index));
 

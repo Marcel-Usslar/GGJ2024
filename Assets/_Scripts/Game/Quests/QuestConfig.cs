@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Game.Speaker;
 using UnityEngine;
 using Utility.Pools;
 
@@ -12,7 +13,7 @@ namespace Game.Quests
         private class QuestMapping
         {
             public string QuestName;
-            public string SpeakerName;
+            public SpeakerType Speaker;
             public string QuestDescription;
         }
 
@@ -23,14 +24,14 @@ namespace Game.Quests
         public QuestListEntryView Prefab => _prefab;
         public int TotalQuests => _totalQuests;
 
-        public bool HasQuest(string speakerName)
+        public bool HasQuest(SpeakerType speaker)
         {
-            return _questData.Any(mapping => mapping.SpeakerName == speakerName);
+            return _questData.Any(mapping => mapping.Speaker == speaker);
         }
 
-        public string GetQuestName(string speakerName)
+        public string GetQuestName(SpeakerType speaker)
         {
-            return _questData.First(mapping => mapping.SpeakerName == speakerName).QuestName;
+            return _questData.First(mapping => mapping.Speaker == speaker).QuestName;
         }
 
         public string GetQuestDescription(string questName)
